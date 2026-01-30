@@ -1,0 +1,11 @@
+footer {
+  svg:hover {
+    scale: 1.1;
+    &:not(#location-pin) {
+      fill: var(--hover-color);
+      * {
+        fill: var(--hover-color);
+      }
+    }
+  }
+}

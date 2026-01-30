@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  /* Fonts */
+  --heading-font: "Montserrat", sans-serif;
+  --subheading-font: "Quicksand", sans-serif;
+  --normal-font: "Open Sans", sans-serif;
+
+  /* Colors */
+  --base-bg-color: #f8fafb; /*Main BG*/
+  --accent-color: #82c0cc; /*Typography, accent*/
+  --secondary-bg-color: #d8e9eb; /*Section BG*/
+  --font-color: #000000a6;
+  --faded-font-color: #212529bf;
+  --font-color-sec: #2c5f78; /*Secondary font color for subheadings*/
+}
+
+/* .dark-mode {
+  --base-bg-color: #0f172a;
+  --accent-color: #f1c55d;
+  --secondary-bg-color: #1e293b;
+  --font-color: #eeeeee;
+  --faded-font-color: #94a3b8;
+  --font-color-sec: #f1f5f9;
+} */
+
+* {
+  transition: all 200ms linear;
+  font-family: var(--normal-font);
+}
+
+html {
+  /* scroll-snap-type: y mandatory; */
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--base-bg-color);
+  /* position: relative; */
+}
+
+.section-breaks {
+  border-color: var(--accent-color);
+  width: 80%;
+  margin: 0 auto;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  opacity: 0.75;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.btn {
+  font-family: var(--normal-font);
+  font-weight: 600;
+  --bs-btn-bg: var(--accent-color) !important;
+  border-width: 0.2rem;
+  --bs-btn-border-color: rgb(from var(--accent-color) 0 150 150);
+  --bs-btn-hover-bg: rgb(from var(--accent-color) 0 125 125);
+  --bs-btn-hover-border-color: rgb(from var(--accent-color) 0 75 75);
+  --bs-btn-active-color: rgb(from var(--accent-color) 0 125 125);
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: none;
+}
+
+.whatsapp-button {
+  animation: wobble 2s linear infinite;
+
+  &:hover {
+    scale: 1.1;
+
+    animation: none;
+    &::before {
+      content: "Book your consultation on whatsapp @₹199";
+
+      font-size: 0.8rem;
+      position: absolute;
+      backdrop-filter: blur(10px);
+      width: 10rem;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+      border: 0.1rem solid rgba(0, 0, 0, 0.3);
+      transition-duration: 100ms;
+    }
+  }
+}
+
+.review-scroller {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .group {
+    animation: move 30s infinite linear;
+  }
+  &:hover {
+    .group {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

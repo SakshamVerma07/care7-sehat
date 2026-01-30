@@ -1,0 +1,44 @@
+.navbar {
+  backdrop-filter: blur(10px);
+
+  * {
+    font-family: var(--heading-font);
+  }
+  .logo-box {
+    span {
+      font-weight: 700;
+      color: var(--font-color-sec);
+    }
+  }
+  .collapse {
+    .nav-item {
+      a {
+        color: var(--font-color-sec);
+        font-family: var(--subheading-font);
+        font-weight: 600;
+        border-radius: 2rem;
+        &:hover {
+          color: white;
+          background: var(--accent-color);
+        }
+      }
+
+      &.active {
+        a {
+          color: white;
+          background: var(--accent-color);
+        }
+      }
+    }
+  }
+}
+
+/* Scroll Spy */
+.navbar:has(a.active) {
+  li:has(a.active) {
+    a {
+      color: white;
+      background: var(--accent-color);
+    }
+  }
+}

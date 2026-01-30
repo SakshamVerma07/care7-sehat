@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(../Static/Images/herobg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+  }
+}
