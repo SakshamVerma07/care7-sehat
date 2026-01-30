@@ -18,7 +18,7 @@ let a = "";
 for (let i = 0; i < 9; i++) {
   const post_template = `<div class="review col-lg-3 col-12" style="width: 15rem">
               <img
-                src="../Static/Images/POSTS/${i + 1}.jpg"
+                src="Static/Images/POSTS/${i + 1}.jpg"
                 width="100%"
                 style="aspect-ratio: 1/1"
                 alt="post"
@@ -32,7 +32,7 @@ a = "";
 for (let i = 0; i < 9; i++) {
   a += `<div class="review col-lg-3 col-12" style="width: 15rem">
                 <img
-                  src="../Static/Images/POSTS/${i + 1}.jpg"
+                  src="Static/Images/POSTS/${i + 1}.jpg"
                   width="100%"
                   style="aspect-ratio: 1/1"
                   alt="post"
@@ -46,7 +46,7 @@ post_section_group2.innerHTML = a;
 // for (let i = 0; i < 9; i++) {
 //   const service_template = `<div class="review col-3">
 //               <img
-//                 src="../Static/Images/Reviews/"
+//                 src="Static/Images/Reviews/"
 //                 width="100%"
 //                 style="aspect-ratio: 1/1"
 //                 alt="service"
