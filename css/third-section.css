@@ -54,9 +54,8 @@
 .plans-section {
   .card-holder {
     display: grid;
-    place-content: center;
-    width: 80%;
-    grid-template-columns: repeat(auto-fit, 14rem);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 260px);
 
     .card {
       transform: translateY(100%);

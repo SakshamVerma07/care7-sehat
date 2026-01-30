@@ -40,6 +40,11 @@ body {
   /* position: relative; */
 }
 
+strong,
+.title {
+  font-family: var(--subheading-font);
+}
+
 .section-breaks {
   border-color: var(--accent-color);
   width: 80%;
