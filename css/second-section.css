@@ -1,5 +1,25 @@
-/* .about-us {
-  * {
-    border: 1px solid red;
+.about-us {
+  position: relative;
+
+  .bg-blurs {
+    &:first-child {
+      background: blue;
+      top: 10%;
+      left: -10%;
+    }
+
+    &:nth-child(2) {
+      --opacity: 0.4;
+      top: 40%;
+      scale: 2;
+      right: -20%;
+    }
+
+    &:nth-child(3) {
+      background: purple;
+      bottom: 0%;
+      scale: 1.5;
+      left: -10%;
+    }
   }
-} */
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      /* 1. Setup the container with a FIXED size */
+      .container {
+        display: flex;
+        width: 600px; /* Essential: Limits the total space */
+        height: 300px;
+        gap: 10px;
+        margin: 50px auto; /* Centers the container */
+      }
+
+      /* 2. Style the cards */
+      .card {
+        /* "flex: 1" means start with 1 share of the space */
+        flex: 1;
+        background-color: #333;
+        border-radius: 20px;
+        color: white;
+        overflow: hidden; /* Prevents content from breaking the animation */
+        cursor: pointer;
+
+        /* Center text (optional) */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+
+        /* The Animation Speed */
+        transition: flex 0.5s ease;
+      }
+
+      /* Different colors for visibility */
+      /* 
+      Card,Color Name,Hex Code
+1,Deep Plum,#6B5B95
+2,Rose Quartz,#F7CAC9
+3,Apricot,#FFB07C
+4,Goldenrod,#FEC051
+
+Card,Color Name,Hex Code
+1,Electric Violet,#8A2BE2
+2,Hot Pink,#FF69B4
+3,Sky Cyan,#00CED1
+4,Spring Green,#00FF7F
+
+Card,Color Name,Hex Code
+1,Muted Navy,#4A6274
+2,Sage Green,#8BA888
+3,Dusty Ochre,#C2A36B
+4,Terracotta,#D17A61
+
+Card,Color Name,Hex Code
+1,Soft Magenta,#E06C9F
+2,Periwinkle,#907AD6
+3,Seafoam,#4FB0C6
+4,Mint,#4FBC8D
+
+Card,Vibe,Hex Code
+1,Trust Blue,#0055CC
+2,Soft Azure,#4D96FF
+3,Clean Teal,#2EC4B6
+4,Fresh Mint,#CBF3F0
+
+Card,Vibe,Hex Code
+1,Deep Sage,#4F6D7A
+2,Warm Sand,#EAE0D5
+3,Muted Rose,#C2948A
+4,Soft Moss,#8DAA91
+
+Card,Vibe,Hex Code
+1,Royal Health,#5E548E
+2,Soft Orchid,#9F86C0
+3,Healthy Glow,#FF9E9E
+4,Sunlight,#FFE5D9
+
+Color,Hex Code,Vibe
+Muted Coral,#F27B7B
+Sage Green,#6BBF8E
+Dusk Blue,#4A909B
+Soft Terracotta,#E8A36B
+
+      */
+
+      .card:nth-child(1) {
+        background: #f27b7b;
+      }
+      .card:nth-child(2) {
+        background: #6bbf8e;
+      }
+      .card:nth-child(3) {
+        background: #4a909b;
+      }
+      .card:nth-child(4) {
+        background: #e8a36b;
+      }
+
+      /* 3. The Expand Effect */
+      .card:hover {
+        /* "flex: 4" means this card takes 4x the space of the others */
+        flex: 4;
+      }
+
+      /* Optional: Dim the others when one is hovered */
+      .container:hover .card:not(:hover) {
+        opacity: 0.7;
+      }
+
+      body {
+        background: #1e1e1e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+    </div>
+  </body>
+</html>

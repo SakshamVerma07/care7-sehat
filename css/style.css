@@ -31,13 +31,15 @@
 }
 
 html {
+  scroll-behavior: smooth;
   /* scroll-snap-type: y mandatory; */
   overflow-x: hidden;
 }
 
 body {
   background: var(--base-bg-color);
-  /* position: relative; */
+  /* width: 100vw; */
+  overflow-x: hidden;
 }
 
 strong,
@@ -107,6 +109,32 @@ strong,
     .group {
       animation-play-state: paused;
     }
+  }
+}
+
+.bg-blurs {
+  --opacity: 0.2;
+  position: absolute;
+  border: 1px solid red;
+  width: clamp(150px, 50vmin, 25em);
+  height: clamp(150px, 50vmin, 25em);
+  border-radius: 50%;
+  background: var(--accent-color);
+  filter: blur(40px);
+  z-index: -1;
+  opacity: var(--opacity);
+  animation: twinkle linear 5s infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: var(--opacity);
+  }
+  100% {
+    opacity: 0;
   }
 }
 

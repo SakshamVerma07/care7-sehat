@@ -1,0 +1,225 @@
+.team-section {
+  position: relative;
+  /* background: #1e1e26; */
+  min-height: 110vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  > * {
+    * {
+      /* outline: 2px solid green; */
+    }
+  }
+
+  .text-box {
+    .mobile {
+      display: none;
+    }
+    > * {
+      font-family: var(--subheading-font);
+    }
+  }
+
+  div:has(.doctor-card-container) {
+    flex: 1;
+    position: relative;
+    width: clamp(10px, 100%, 100rem);
+    min-height: 60vh;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+
+    .container-model {
+      display: none;
+    }
+
+    .doctor-card-container {
+      position: absolute;
+      max-height: 60vh;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .doctor-card {
+        position: relative;
+        cursor: pointer;
+        flex: 1;
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+        justify-content: space-around;
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+
+        .content {
+          opacity: 1;
+          animation: appear 200ms;
+          * {
+            opacity: 1;
+            animation: appear 200ms;
+          }
+        }
+
+        > img {
+          border-radius: 0.7rem;
+          inline-size: 100%;
+          width: 100%;
+          aspect-ratio: 1/1;
+          align-self: center;
+          object-fit: cover;
+        }
+        .doctor-name {
+          font-family: var(--subheading-font);
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+
+        .hover-data {
+          display: none;
+          opacity: 0;
+          * {
+            opacity: 0;
+            display: none;
+          }
+        }
+
+        &:nth-child(1) {
+          background: #f27b7b;
+        }
+        &:nth-child(2) {
+          background: #6bbf8e;
+        }
+        &:nth-child(3) {
+          background: #4a909b;
+        }
+        &:nth-child(4) {
+          background: #e8a36b;
+        }
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: var(--display);
+    opacity: 1;
+  }
+}
+
+@keyframes vanish {
+  from {
+    display: var(--display);
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .team-section {
+    div:has(.doctor-card-container) {
+      .doctor-card-container {
+        .doctor-card {
+          &:hover {
+            flex-direction: row !important;
+            justify-content: center !important;
+            flex: 4;
+            img {
+              height: 100%;
+              max-height: 30rem;
+              aspect-ratio: 1;
+            }
+            > .content {
+              opacity: 0;
+              animation: vanish 200ms;
+              display: none;
+              * {
+                opacity: 0;
+                animation: vanish 200ms;
+                display: none;
+              }
+            }
+
+            .hover-data {
+              --display: flex;
+              display: flex !important;
+              width: 100%;
+              flex-direction: column;
+              gap: 0.3em;
+              animation: appear 500ms;
+              opacity: 1 !important;
+
+              * {
+                opacity: 1;
+              }
+
+              span.fw-semibold,
+              span.inline {
+                display: inline;
+                --display: inline;
+              }
+
+              span:not(.fw-semibold),
+              img {
+                display: block;
+                --display: block;
+                animation: appear 500ms;
+              }
+
+              .fw-semibold {
+                font-family: var(--subheading-font);
+              }
+
+              .row-1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                --display: flex;
+                animation: appear 500ms;
+
+                * {
+                  line-height: 3vw;
+                }
+              }
+
+              a {
+                flex-grow: 1;
+                align-self: flex-end;
+                display: flex;
+                --display: flex;
+                animation: appear 500ms;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                img {
+                  height: 30px;
+                  aspect-ratio: 1;
+                }
+
+                &:hover {
+                  color: #5042bd;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+        &:has(.doctor-card:hover) .doctor-card:not(:hover) {
+          opacity: 0.7;
+          flex: 0.5;
+          filter: grayscale(1);
+
+          span {
+            scale: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

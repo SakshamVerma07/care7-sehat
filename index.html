@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
     <title>Care 7 | Homeopathic Clinic</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/second-section.css" />
     <link rel="stylesheet" href="css/third-section.css" />
+    <link rel="stylesheet" href="css/team-section.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link
       rel="stylesheet"
@@ -92,7 +93,7 @@
 
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg px-2 px-lg-4 w-100 fixed-top justify-content-between justify-content-lg-around"
+      class="navbar py-0 navbar-expand-lg px-2 px-lg-4 w-100 fixed-top justify-content-between justify-content-lg-around"
       data-bs-theme="light"
       id="navbar"
     >
@@ -181,14 +182,11 @@
 
         <!-- book an appointment button -->
         <div class="col-lg-8">
-          <a href="https://wa.me/919971226013" target="_blank" rel="noopener noreferrer">
-            <button
-            class="btn btn-primary rounded-pill px-3 py-2 align-self-lg-start align-items-center"
-            style="text-transform: uppercase"
-            >
+          <a style="text-transform: uppercase;"
+           href="https://wa.me/919971226013" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white btn btn-primary rounded-pill px-3 py-2 align-self-lg-start align-items-center"
+          >
             Book Now
-          </button>
-        </a>
+          </a>
         </div>
       </div>
 
@@ -204,11 +202,14 @@
       class="about-us section container-fluid d-flex justify-content-around align-items-center flex-column py-5"
       id="about-us"
     >
+    <div class="bg-blurs"></div>
+    <div class="bg-blurs"></div>
+    <div class="bg-blurs"></div>
       <div
         class="text-box d-flex flex-column justify-content-center align-items-center"
       >
         <div
-          class="title text display-3 fw-semibold col-12 text-center text-wrap mb-5"
+          class="title text display-3 fw-semibold col-12 text-center text-wrap mb-4"
         >
           About Us
         </div>
@@ -385,50 +386,51 @@
 
     <!-- Plans & Services -->
     <main
-      class="plans-section section container-fluid d-flex justify-content-evenly align-items-center py-5 flex-column"
+      class="plans-section px-0 section container-fluid d-flex justify-content-evenly align-items-center py-5 flex-column"
       id="plans"
     >
-      <hr class="section-breaks" />
-    <div class="text-box">
-      <div class="text display-5 fw-semibold col-12 d-flex text-center text-wrap mt-lg-3 mt-4">
-        Services
-      </div>
-    </div>
-      <div class="services-bento mt-2 p-3">
-        <div class="service" style="transform: translateX(-50%); grid-area: box-1; --after-content: 'Personalized diet and lifestyle recommendations to support treatment, improve immunity, and promote preventive healthcare.'">
-          <img src="Static/Images/Non-icon-images/1-desktop.png" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/1-mobile.png" alt="image-mobile" class="mobile-img">
-          <span>Diet & Lifestyle</span>
-        </div>
-        <div class="service" style="transform: translateX(50%); grid-area: box-2; --after-content: 'Holistic homeopathic and counselling-based support for mental wellness.'">
-          <img src="Static/Images/Non-icon-images/2-desktop.png" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/2-mobile.png" alt="image-mobile" class="mobile-img">
-          <span>Mental Health</span>
-        </div>
-        <div class="service" id="whatsapp-consultation-service" style="transform: translateX(-50%); grid-area: box-3; --after-content: 'Easy and convenient doctor consultation through WhatsApp for patients seeking trusted online homeopathic care.'">
-          <img src="Static/Images/Non-icon-images/3-desktop.png" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/3-mobile.png" alt="image-mobile" class="mobile-img">
-          <span >Whatsapp Consultation</span>
-        </div>
-        <div class="service" style="transform: translateX(50%); grid-area: box-4; --after-content: 'Homeopathic support for all of women’s health concerns'">
-          <img src="Static/Images/Non-icon-images/4.png" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/4.png" alt="image-mobile" class="mobile-img">
-          <span>Female Health</span>
-        </div>
-        <div class="service" style="transform: translateX(50%); grid-area: box-5; --after-content: 'Personalized online consultation with holistic healing'">
-          <img src="Static/Images/Non-icon-images/5-desktop.jpg" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/5-mobile.png" alt="image-mobile" class="mobile-img">
-          <span>Online Treatement</span>
-        </div>
-        <div class="service" style="transform: translateX(-50%); grid-area: box-6; --after-content: 'Wellness-focused tratement to prevent disease.'">
-          <img src="Static/Images/Non-icon-images/6-desktop.png" alt="image-desktop" class="desktop-img">
-          <img src="Static/Images/Non-icon-images/6-mobile.png" alt="image-mobile" class="mobile-img">
-          <span>Holistic Consultation</span>
-        </div>
-        
-      </div>
 
-      <div class="text-box">
+    <div class="bg-blurs"></div>
+    <div class="bg-blurs"></div>
+      <div class="outer-container flex-column d-flex justify-content-center align-items-center mb-lg-5 pb-lg-5 mt-lg-3 pt-lg-3">
+        <div class="services-container mt-4">
+          <div class="text-box w-100 d-flex align-items-center justify-content-center justify-content-lg-between p-3 p-lg-4 p-xxl-5">
+            <div class="d-flex gap-lg-5 align-items-center col-lg-8">
+
+              <div class="text display-5 fw-semibold col-lg-4">
+                Services For <br> Your Health
+              </div>
+              <div class="offer-services text display-5 fw-semibold col-lg-6 col-4">Services we Offer</div>
+            </div>
+            <button class="btn btn-primary rounded-pill">Book Now</button>
+          </div>
+
+          <div class="services">
+            <div class="service" style="--bg-color: #ffffff; --after-content: 'Professional & Personalised Homeopathic Treatement at Affordable Rates.'">
+              <img src="Static/Images/Non-icon-images/6-desktop.png" alt="Homeopathic Treatement Image" class="mobile-img">
+              <span style="font-family: var(--subheading-font);">Homeopathic Treatment</span>
+            </div>
+            <div class="service" style="--bg-color: #d6f6f5; --after-content: 'Lab Tests form NABL Certified Labs with Home Collection Facility at Discounted Rates.'">
+                <img src="Static/Images/Non-icon-images/labtests.png" alt="Lab tests image" class="mobile-img">
+                <span>Lab <br> Tests</span>
+            </div>
+            <div class="service" style="--bg-color: #f2eff7; --after-content: 'Homeopathic Pharmacy Delivering Pan India.'">
+              <img src="Static/Images/Non-icon-images/pharmacy.png" alt="Pharmacy Image" class="mobile-img">
+              <span>Homeopathic<br>Pharmacy</span>
+            </div>
+            <div class="service" id="whatsapp-consultation-service" style="--bg-color: #dae9dd; --after-content: 'Female health specialists to diagnose early and stay healthy.'">
+
+              <img src="Static/Images/Non-icon-images/products.png" alt="Healthcare Products Image" class="mobile-img">
+              <span >Healthcare Products</span>
+            </div>
+            
+          </div>
+        </div>
+        <button onclick="window.location.href = '#contact-us'" class="book-now btn d-block mt-3 mb-5 d-lg-none btn-primary">Book Now</button>
+      </div>
+      
+
+      <div class="text-box mt-5 pt-5">
         <div
           class="text display-3 fw-semibold col-12 d-flex text-center text-wrap mt-lg-3 mt-4"
         >
@@ -436,33 +438,39 @@
         </div>
       </div>
 
-      <div class="card-holder my-lg-5 my-5 gap-lg-3 gap-4">
+      <div class="card-holder mt-lg-5 mt-5 w-100 px-2 gap-lg-2 gap-4">
 
         <div class="card p-3">
           <div class="d-flex justify-content-between align-items-center gap-2">
-            <span class="card-title fw-semibold fs-4 m-0">Family</span>
+            <span class="card-title fw-semibold fs-4 m-0">Silver</span>
             <span class="card-price"
-              ><span class="card-amount fw-semibold fs-4">₹5999</span
+              ><span class="card-amount fw-semibold fs-4">₹999</span
               ><span class="per-month" style="font-size: 0.8rem"
                 >/month</span
               ></span
             >
           </div>
-          <span class="desc"
-            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vel nobis culpa unde! Reprehenderit at alias porro illo, corporis explicabo?</span
-          >
+          <span class="desc">
+            A basic plan for basic health issues. Personalised holistic treatment.
+          </span>
           <ul
-            class="card-benefits-list col-12 list-group list-group-flush border-0"
+            class="card-benefits-list col-12 list-group list-group-flush border-0 d-flex flex-column justify-content-center"
             style="list-style: inside; list-style-type: none"
           >
-            <li class="card-benefit-list-item list-group-items border-bottom" style="font-size: 0.8rem;">
-              ✔️ 1 to 1 Health Counselling
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ✔️ 2 Appointed Doctors
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ 
+              ✔️ General Monitoring
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ ghi
+              ✔️ Monitoring
+            </li>
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ❌ Personalised Diet Plan
+            </li>
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ❌ Psychological Counselling
             </li>
           </ul>
           <div class="contact-us btn btn-primary align-self-end">
@@ -472,29 +480,35 @@
 
         <div class="card p-3">
           <div class="d-flex justify-content-between align-items-center gap-2">
-            <span class="card-title fw-semibold fs-4 m-0">Family</span>
+            <span class="card-title fw-semibold fs-4 m-0">Gold</span>
             <span class="card-price"
-              ><span class="card-amount fw-semibold fs-4">₹5999</span
+              ><span class="card-amount fw-semibold fs-4">₹1999</span
               ><span class="per-month" style="font-size: 0.8rem"
                 >/month</span
               ></span
             >
           </div>
-          <span class="desc"
-            >Get your family treatment at the ease your home with our family package.</span
-          >
+          <span class="desc">
+            Plan recommended for lifestyle diseases, professional diet planning & charting.
+          </span>
           <ul
-            class="card-benefits-list col-12 list-group list-group-flush border-0"
+            class="card-benefits-list col-12 list-group list-group-flush border-0 d-flex flex-column justify-content-center"
             style="list-style: inside; list-style-type: none"
           >
-            <li class="card-benefit-list-item list-group-items border-bottom" style="font-size: 0.8rem;">
-              ✔️ 1 to 1 Health Counselling
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ✔️ 3 Apponited Doctors
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ 
+              ✔️ 1 Appointed Dietician
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ ghi
+              ✔️ Personalised Diet Plan
+            </li>
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ✔️ Everything is Silver 
+            </li>
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ❌ Psychological Counselling
             </li>
           </ul>
           <div class="contact-us btn btn-primary align-self-end">
@@ -502,31 +516,37 @@
           </div>
         </div>
         
-        <div class="card p-3 text-white" id="most-popular">
-          <div class="d-flex justify-content-between align-items-center gap-2">
-            <span class="card-title fw-semibold fs-4 m-0">Family</span>
-            <span class="card-price"
-              ><span class="card-amount fw-semibold fs-4">₹5999</span
+        <div class="card p-3 text-white" id="most-popular" style=" scale: 1.02 1;">
+          <div class="d-flex justify-content-between align-items-center" style="gap: 0.3rem;">
+            <span class="card-title fw-semibold m-0" style="font-size: 1.3rem;">Platinum</span>
+            <span class="card-price" style="font-size: 1.3rem;"
+              ><span class="card-amount fw-semibold">₹2999<super class="fs-5">*</super></span
               ><span class="per-month" style="font-size: 0.8rem"
                 >/month</span
               ></span
             >
           </div>
           <span class="desc"
-            >Get your family treatment at the ease your home with our family package.</span
+            >For patients requiring utmost care, this plan offers everything.</span
           >
           <ul
-            class="card-benefits-list col-12 list-group list-group-flush border-0"
+            class="card-benefits-list col-12 list-group list-group-flush border-0  d-flex flex-column justify-content-center"
             style="list-style: inside; list-style-type: none"
           >
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ✔️ 4 Appointed Doctors
+            </li>
             <li class="card-benefit-list-item list-group-items border-bottom" style="font-size: 0.8rem;">
-              ✔️ 1 to 1 Health Counselling
+              ✔️ 1 to 1 Professional Counselling
+            </li>
+            <li class="card-benefit-list-item list-group-items border-bottom" style="font-size: 0.8rem;">
+              ✔️ Yoga Instructor, Physiotherapist, Dietician, Psychological Counsellor <br> (Any 2)
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ 
+              ✔️ Everything in Gold & Silver
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ ghi
+              ✔️ 1 to 1 Lifestyle Mentoring
             </li>
           </ul>
           <div class="contact-us btn btn-primary align-self-end">
@@ -538,7 +558,7 @@
           <div class="d-flex justify-content-between align-items-center gap-2">
             <span class="card-title fw-semibold fs-4 m-0">Family</span>
             <span class="card-price"
-              ><span class="card-amount fw-semibold fs-4">₹5999</span
+              ><span class="card-amount fw-semibold fs-4">₹5999<super class="fs-5">*</super></span
               ><span class="per-month" style="font-size: 0.8rem"
                 >/month</span
               ></span
@@ -551,18 +571,168 @@
             class="card-benefits-list col-12 list-group list-group-flush border-0"
             style="list-style: inside; list-style-type: none"
           >
-            <li class="card-benefit-list-item list-group-items border-bottom" style="font-size: 0.8rem;">
-              ✔️ 1 to 1 Health Counselling
+            <li class="card-benefit-list-item list-group-items border-bottom">
+              ✔️ Upto 4 members
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ 
+              ✔️ Customisable
             </li>
             <li class="card-benefit-list-item list-group-items border-bottom">
-              ✔️ ghi
+              ✔️ Flexible Schedules
             </li>
           </ul>
           <div class="contact-us btn btn-primary align-self-end">
             Contact Us
+          </div>
+        </div>
+      </div>
+      <div class="span mt-2">*Starting price.</div>
+      
+      
+    </main>
+
+    <!-- Team -->
+      <main
+      class="team-section section container-fluid p-lg-5 p-4 d-flex justify-content-around justify-content-xl-center gap-5 align-items-center flex-column"
+      id="team"
+    >
+      <div class="text-box w-100 d-flex align-items-start" style="max-width: 2000px;">
+        <span class="display-5 me-auto fw-semibold">Meet Our Team of <br>Experienced Doctors</span>
+        <span class="mobile smaller">"More Than, Just Doctors"</span>
+        <figure class="text-end">
+          <blockquote class="fs-4 blockquote">
+            <p>“Medicines cure diseases, but only doctors can cure patients.”</p>
+          </blockquote>
+          <figcaption class="fs-5 blockquote-footer opacity-50">
+            Carl Jung
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="outer-container d-flex justify-content-center flex-xl-grow-0">
+
+        <div class="doctor-card-container d-flex gap-3 justify-content-center text-white">
+
+          <!-- Use 1364x1364 image -->
+          <div class="doctor-card d-flex flex-column p-3 gap-xl-3 gap-2 ">
+            <img src="Static/Images/Non-icon-images/2-desktop.png" alt="">
+            
+            <div class="content d-flex flex-column ">
+              <span class="doctor-name fs-3 border-bottom border-4 border-white mb-3">Lorem, ipsum</span>
+            </div>
+            <div class="hover-data">
+              <div class="row-1">
+                <span class="doctor-name fs-3 d-none d-xl-block">Lorem, ipsum</span>
+                <span class="doctor-name fs-4 d-xl-none">Lorem, ipsum</span>
+              </div>
+              <span class="doctor-experience d-none d-xl-block fs-5" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="doctor-experience fs-6 d-xl-none" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="speciality d-none d-xl-block fs-5"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="speciality d-xl-none fs-6"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="overview d-none d-xl-block fs-5"><span class="fw-semibold">Overview:</span> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <span class="overview d-xl-none fs-6"><span class="fw-semibold">Overview:</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <a class="eka-link">
+                <img src="Static/Images/Non-icon-images/eka.png" alt="">
+                Profile
+              </a>
+            </div>
+          </div>
+          <div class="doctor-card d-flex flex-column p-3 gap-xl-3 gap-2 ">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" alt="">
+            
+            <div class="content d-flex flex-column ">
+              <span class="doctor-name fs-3 border-bottom border-4 border-white mb-3">Lorem, ipsum</span>
+            </div>
+            <div class="hover-data">
+              <div class="row-1">
+                <span class="doctor-name fs-3 d-none d-xl-block">Lorem, ipsum</span>
+                <span class="doctor-name fs-4 d-xl-none">Lorem, ipsum</span>
+              </div>
+              <span class="doctor-experience d-none d-xl-block fs-5" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="doctor-experience fs-6 d-xl-none" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="speciality d-none d-xl-block fs-5"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="speciality d-xl-none fs-6"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="overview d-none d-xl-block fs-5"><span class="fw-semibold">Overview:</span> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <span class="overview d-xl-none fs-6"><span class="fw-semibold">Overview:</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <a class="eka-link">
+                <img src="Static/Images/Non-icon-images/eka.png" alt="">
+                Profile
+              </a>
+            </div>
+          </div>
+          <div class="doctor-card d-flex flex-column p-3 gap-xl-3 gap-2 ">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" alt="">
+            
+            <div class="content d-flex flex-column ">
+              <span class="doctor-name fs-3 border-bottom border-4 border-white mb-3">Lorem, ipsum</span>
+            </div>
+            <div class="hover-data">
+              <div class="row-1">
+                <span class="doctor-name fs-3 d-none d-xl-block">Lorem, ipsum</span>
+                <span class="doctor-name fs-4 d-xl-none">Lorem, ipsum</span>
+              </div>
+              <span class="doctor-experience d-none d-xl-block fs-5" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="doctor-experience fs-6 d-xl-none" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="speciality d-none d-xl-block fs-5"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="speciality d-xl-none fs-6"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="overview d-none d-xl-block fs-5"><span class="fw-semibold">Overview:</span> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <span class="overview d-xl-none fs-6"><span class="fw-semibold">Overview:</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <a class="eka-link">
+                <img src="Static/Images/Non-icon-images/eka.png" alt="">
+                Profile
+              </a>
+            </div>
+          </div>
+          <div class="doctor-card d-flex flex-column p-3 gap-xl-3 gap-2 ">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" alt="">
+            
+            <div class="content d-flex flex-column ">
+              <span class="doctor-name fs-3 border-bottom border-4 border-white mb-3">Lorem, ipsum</span>
+            </div>
+            <div class="hover-data">
+              <div class="row-1">
+                <span class="doctor-name fs-3 d-none d-xl-block">Lorem, ipsum</span>
+                <span class="doctor-name fs-4 d-xl-none">Lorem, ipsum</span>
+              </div>
+              <span class="doctor-experience d-none d-xl-block fs-5" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="doctor-experience fs-6 d-xl-none" style="font-family: var(--subheading-font);"><span class="fw-semibold">Experience:</span> 10 Years</span>
+              <span class="speciality d-none d-xl-block fs-5"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="speciality d-xl-none fs-6"><span class="fw-semibold">Speciality:</span> Lorem, ipsum</span>
+              <span class="overview d-none d-xl-block fs-5"><span class="fw-semibold">Overview:</span> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <span class="overview d-xl-none fs-6"><span class="fw-semibold">Overview:</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eaque quasi numquam odit possimus soluta, facere quisquam nobis. Ea, consectetur!</span>
+              <a class="eka-link">
+                <img src="Static/Images/Non-icon-images/eka.png" alt="">
+                Profile
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Low vw devices/Mobile -->
+        <div class="container-model">
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Lorem, ipsum.</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Lorem, ipsum.</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Lorem, ipsum.</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Lorem, ipsum.</span>
+            <span class="speciality">Lorem, ipsum.</span>
           </div>
         </div>
       </div>

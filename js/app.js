@@ -69,16 +69,16 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.3,
-    rootMargin: "50% 0px -20% 0px",
+    rootMargin: "10% 0px -20% 0px",
   },
 );
 
-const bento = document.querySelectorAll(".services-bento .service");
-const cards = document.querySelectorAll(".card-holder .card");
+// const bento = document.querySelectorAll(".services-bento .service");
+// const cards = document.querySelectorAll(".card-holder .card");
 
-cards.forEach((e) => {
-  observer.observe(e);
-});
-bento.forEach((e) => {
-  observer.observe(e);
-});
+// cards.forEach((e) => {
+//   observer.observe(e);
+// });
+// bento.forEach((e) => {
+//   observer.observe(e);
+// });
