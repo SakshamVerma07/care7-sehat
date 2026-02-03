@@ -19,7 +19,7 @@
   }
 
   .hero {
-    background-image: url(/Static/Images/herbg-small.png);
+    background-image: url(../Static/Images/herbg-small.png);
     background-size: contain;
     background-position: 0 0;
     img {
@@ -201,7 +201,7 @@
 
 @media screen and (min-width: 500px) {
   .hero {
-    background-image: url(/Static/Images/herobg.png);
+    background-image: url(../Static/Images/herobg.png);
     background-size: cover;
   }
 }
