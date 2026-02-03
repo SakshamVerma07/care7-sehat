@@ -1,6 +1,5 @@
 .team-section {
   position: relative;
-  /* background: #1e1e26; */
   min-height: 110vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -14,26 +13,29 @@
     }
   }
 
-  div:has(.doctor-card-container) {
+  .outer-container {
     flex: 1;
     position: relative;
     width: clamp(10px, 100%, 100rem);
     min-height: 60vh;
     padding-bottom: 5rem;
     flex-wrap: wrap;
+    gap: 3rem;
 
     .container-model {
       display: none;
     }
 
     .doctor-card-container {
-      position: absolute;
+      /* width: 100%; */
+      max-width: 100%;
       max-height: 60vh;
       display: flex;
       justify-content: center;
       gap: 1rem;
 
       .doctor-card {
+        width: 15rem;
         position: relative;
         cursor: pointer;
         flex: 1;
@@ -62,7 +64,7 @@
         }
         .doctor-name {
           font-family: var(--subheading-font);
-          font-size: 1.3rem;
+          font-size: clamp(10px, 1.9cqw, 2.4rem);
           text-transform: capitalize;
           font-weight: bold;
         }
@@ -76,16 +78,16 @@
           }
         }
 
-        &:nth-child(1) {
+        &:nth-child(n) {
           background: #f27b7b;
         }
-        &:nth-child(2) {
+        &:nth-child(2n) {
           background: #6bbf8e;
         }
-        &:nth-child(3) {
+        &:nth-child(3n) {
           background: #4a909b;
         }
-        &:nth-child(4) {
+        &:nth-child(4n) {
           background: #e8a36b;
         }
       }
@@ -124,6 +126,7 @@
             flex-direction: row !important;
             justify-content: center !important;
             flex: 4;
+            width: calc(15 * 2rem);
             img {
               height: 100%;
               max-height: 30rem;
@@ -207,7 +210,7 @@
         &:has(.doctor-card:hover) .doctor-card:not(:hover) {
           opacity: 0.7;
           flex: 0.5;
-          filter: grayscale(1);
+          filter: grayscale(0.5);
 
           span {
             scale: 0.7;

@@ -82,3 +82,13 @@ const observer = new IntersectionObserver(
 // bento.forEach((e) => {
 //   observer.observe(e);
 // });
+
+const query_form = document.getElementById("query-form");
+
+query_form.addEventListener("submit", function (event) {
+  const pop_up_message = document.getElementById("form-submit-message");
+  const success_modal = new bootstrap.Modal(pop_up_message);
+  setTimeout(() => {
+    success_modal.show();
+  }, 10000);
+});
