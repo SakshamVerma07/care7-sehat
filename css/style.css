@@ -39,7 +39,7 @@ html {
 body {
   background: var(--base-bg-color);
   /* width: 100vw; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 strong,

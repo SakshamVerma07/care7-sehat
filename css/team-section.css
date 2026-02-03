@@ -5,12 +5,6 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
 
-  > * {
-    * {
-      /* outline: 2px solid green; */
-    }
-  }
-
   .text-box {
     .mobile {
       display: none;
