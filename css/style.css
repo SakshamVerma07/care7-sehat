@@ -176,3 +176,38 @@ strong,
     border-color: var(--accent-color) !important;
   }
 }
+
+.fs-7 {
+  font-size: 0.8rem;
+  color: white;
+}
+
+#whatsapp-svg {
+  --hover-color: #51ef73;
+  animation-delay: 200ms;
+}
+#instagram-svg {
+  --hover-color: #873ab1;
+}
+
+#youtube-svg {
+  --hover-color: #ff0000;
+  animation-delay: 400ms;
+}
+#privacy-policy-link {
+  text-decoration: none;
+}
+#terms-link {
+  text-decoration: none;
+}
+#blogs-link {
+  text-decoration: none;
+}
+#location-pin {
+  --hover-color: #441eff;
+}
+
+footer {
+  background: hsl(from var(--accent-color) h s 30);
+  border-top: 2px solid white;
+}

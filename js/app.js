@@ -109,7 +109,7 @@ contactUsForm.addEventListener("submit", async function (e) {
     alert("Kindly give consent and acknowledgement");
   }
 
-  text = `
+  let text = `
     🔔 New contact form submission:
     Name : "${firstname} ${lastname}"
     Email : "${email}"
@@ -149,3 +149,11 @@ contactUsForm.addEventListener("submit", async function (e) {
     alert("Failed to send message. Check console for details.");
   }
 });
+
+function readMore() {
+  const aboutsection = document.getElementById("about-us");
+  const grayedOutArea = document.getElementById("grayed-out-area");
+  console.log(aboutsection.style.height);
+  aboutsection.style.height = "fit-content";
+  grayedOutArea.style.visibility = "hidden";
+}

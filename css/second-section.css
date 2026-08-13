@@ -1,6 +1,6 @@
 .about-us {
   position: relative;
-  height: 100vh !important;
+  height: 100vh;
   overflow: hidden;
 
   .grayed-out-area {

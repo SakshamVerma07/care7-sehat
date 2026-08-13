@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  width: 100dvw !important;
+}
+
 .hero {
   background-image: url(../Static/Images/herobg.png);
   background-size: cover;
@@ -10,5 +15,15 @@
 
   a.text-decoration-none:focus {
     outline: none;
+  }
+
+  #hero-main-text {
+    text-align: center;
+  }
+}
+
+@media screen and (width > 992px) {
+  #hero-main-text {
+    text-align: left !important;
   }
 }
