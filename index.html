@@ -198,10 +198,13 @@
     </main>
 
     <!-- About -->
-    <main
+    <section
       class="about-us section container-fluid d-flex justify-content-around align-items-center flex-column py-5"
       id="about-us"
     >
+    <div class="grayed-out-area w-100 h-25 position-absolute bottom-0 d-flex justify-content-center align-items-end">
+      <button class="btn btn-primary rounded-pill">Read More</button>
+    </div>
     <div class="bg-blurs"></div>
     <div class="bg-blurs"></div>
     <div class="bg-blurs"></div>
@@ -382,10 +385,10 @@
           <strong class="fs-5 align-self-center">📞 Start your wellness journey today – Online via WhatsApp</strong>
         </div>
       </div>
-    </main>
+    </section>
 
     <!-- Plans & Services -->
-    <main
+    <section
       class="plans-section px-0 section container-fluid d-flex justify-content-evenly align-items-center py-5 flex-column"
       id="plans"
     >
@@ -403,7 +406,7 @@
               </div>
               <div class="offer-services text display-5 fw-semibold col-lg-6 col-4">Services we Offer</div>
             </div>
-            <button class="btn btn-primary rounded-pill">Book Now</button>
+            <button class="btn btn-primary rounded-pill" onclick="window.location.href = '#contact-us'">Book Now</button>
           </div>
 
           <div class="services">
@@ -589,10 +592,10 @@
 
       <div class="span mt-2">*Starting price.</div>
       
-    </main>
+    </section>
 
     <!-- Team -->
-      <main
+      <section
       class="team-section section container-fluid p-lg-5 p-4 d-flex justify-content-around justify-content-xl-center gap-5 align-items-center flex-column"
       id="team"
     >
@@ -706,42 +709,47 @@
                 </a>
               </div>
             </div>
-          </div>
-
-          <!-- Low vw devices/Mobile -->
-          <div class="container-model">
-            
-            <div class="doctors">
-              <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
-              <span class="name fs-4">Dr. Pooja Verma</span>
-              <span class="speciality">Lorem, ipsum.</span>
-            </div>
-            
-            <div class="doctors">
-              <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
-              <span class="name fs-4">Dr. Rajnee Pachauri</span>
-              <span class="speciality">Lorem, ipsum.</span>
-            </div>
-            
-            <div class="doctors">
-              <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
-              <span class="name fs-4">Dt. Sarika Tyagi</span>
-              <span class="speciality">Lorem, ipsum.</span>
-            </div>
-            
-            <div class="doctors">
-              <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
-              <span class="name fs-4">Dr. Garima Gu</span>
-              <span class="speciality">Lorem, ipsum.</span>
-            </div>
-          </div>
         </div>
 
+        <!-- Low vw devices/Mobile -->
+        <div class="container-model">
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Dr. Pooja Verma</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Dr. Rajnee Pachauri</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Dt. Sarika Tyagi</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+          
+          <div class="doctors">
+            <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
+            <span class="name fs-4">Dr. Garima Gu</span>
+            <span class="speciality">Lorem, ipsum.</span>
+          </div>
+        </div>
+          
+        <span onclick="window.location.href = '/team'" class="position-absolute bottom-0 fs-4 fw-bold" style="right: 2rem; color: hsl(from var(--accent-color) h s 40 ); cursor: pointer;">See All...</span>
+        <!-- Set up team page then use this -->
+        <!-- <span onclick="window.location.href = '/team'" class="position-absolute bottom-0 fs-4 fw-bold" style="right: 2rem; color: hsl(from var(--accent-color) h s 40 ); cursor: pointer;">See All...</span> -->
       </div>
-    </main>
+
+
+      </div>
+    </section>
 
     <!-- User Reviews & Posts -->
-    <main
+    <section
       class="posts-section section container-fluid d-flex justify-content-evenly align-items-center pt-5 flex-column"
       id="posts"
     >
@@ -767,7 +775,7 @@
           id="postgroup2"
         ></div>
       </div>
-      <div class="text-box mt-5">
+      <!-- <div class="text-box mt-5">
         <div
           class="text display-5 fw-semibold col-12 d-flex text-center text-wrap"
         >
@@ -787,27 +795,21 @@
           aria-hidden
           id="reviewgroup2"
         ></div>
-      </div>
-    </main>
+      </div> -->
+    </section>
 
     <!-- Contact Us -->
-    <main
-      class="section contact-us-section container-fluid d-flex justify-content-evenly align-items-center flex-column gap-4"
+    <section
+      class="section contact-us-section container-fluid d-flex justify-content-evenly align-items-center flex-column gap-4 pb-5"
       id="contact-us"
+      style="background: linear-gradient(to bottom, transparent 50%, var(--accent-color) 50%);"
     >
-      <hr class="section-breaks" />
-      <div class="text-box">
-        <div
-          class="text display-3 fw-semibold col-12 d-flex text-center text-wrap"
-        >
-          Contact Us
-        </div>
-      </div>
+      <hr class="section-breaks mb-5" />
       <form
         id="query-form"
-        action="https://formspree.io/f/xvzalaeg"
-        method="POST"
-        class="d-flex justify-content-center align-items-center flex-column p-4 col-lg-6 col-12 border border-3 rounded-4"
+        action=""
+        class="d-flex justify-content-center align-items-center flex-column p-4 col-lg-6 col-12 border border-3 rounded-4 bg-white"
+        onsubmit="(e)=>{e.preventDefault(); submitForm(e)}"
       >
         <span class="text display-6 mb-5 fw-semibold" style="font-family: var(--subheading-font)"
           >Consultation Request Form</span
@@ -871,9 +873,9 @@
           <label for="consultation-preference" class="form-label fw-medium"
             >Consultation Preference</label
           >
-          <select name="consultation-preference" id="consultation-preference" class="form-select" required
+          <select name="consultation-preference" id="preference" class="form-select" required
           >
-            <option value="select" selected disabled>Select</option>
+            <option value="" selected disabled>--- Please Select an Option ---</option>
             <option value="teleconsultation-video">Teleconsultation: Video Mode</option>
             <option value="teleconsultation-audio">Teleconsultation: Audio Mode</option>
             <option value="physical-visit">Walk In Clinic</option>
@@ -896,7 +898,7 @@
 
         <button type="submit" id="form-submit-button" class="btn btn-primary">Submit</button>
       </form>
-    </main>
+    </section>
 
     <!-- Form submission message -->
     <div class="modal fade" id="form-submit-message" tabindex="-1" aria-labelledby="successModalLabeled" aria-hidden="true">
@@ -919,20 +921,23 @@
 
     <!-- Footer -->
     <footer
-      class="d-flex justify-content-evenly align-items-center mt-5 bg-primary-subtle px-2 px-lg-2"
+      class="d-flex justify-content-evenly align-items-center px-2 px-lg-2 py-4 text-white"
+      style="
+        background: hsl(from var(--accent-color) h s 30);
+        border-top: 2px solid white'"
     >
       <div class="address d-lg-none">
         <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
           <svg
-            id="location-pin"
-            style="--hover-color: #441eff"
+          style="--hover-color : #441eff"
+          id="location-pin"
             viewBox="0 0 24 24"
             height="48"
             width="48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
               stroke-linecap="round"
@@ -959,15 +964,16 @@
       </div>
       <div class="address d-lg-flex d-none align-items-center gap-2">
         <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
-          <svg
-            id="location-pin"
+        <svg
+          style="--hover-color : #441eff"
+          id="location-pin"
             viewBox="0 0 24 24"
-            height="48"
-            width="48"
+            height="80"
+            width="80"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
               stroke-linecap="round"
@@ -976,15 +982,15 @@
             <g id="SVGRepo_iconCarrier">
               <path
                 d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                stroke="#000000"
-                stroke-width="2"
+                stroke="#fff"
+                stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path>
               <path
                 d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                stroke="#000000"
-                stroke-width="2"
+                stroke="#fff"
+                stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path>
@@ -994,41 +1000,74 @@
 
         <div class="cont d-none d-lg-flex flex-column">
           <span>KA206, Spring Meadows Society </span>
-          <span>Greater Noida West</span
-          ><span> Uttar Pradesh 201306, India</span>
+          <span>Greater Noida West</span>
+          <span> Uttar Pradesh 201306, India</span>
         </div>
       </div>
+
       <span class="fs-lg-5 fs-6">©CARE7 Sehat 2026</span>
+      <div class="links-container d-flex flex-column py-2 px-3">
+        <span class="fw-bold fs-2 align-self-center">Links</span>
+        <span class="fs-lg-5 fs-6">
+          <a
+          href="/privacy-policy"
+          style="text-decoration: none;"
+          class="fs-5"
+          >
+            ○
+            Privacy
+        </a>
+        </span>
+        <span class="fs-lg-5 fs-6">
+          <a
+            href="/terms-and-condition"
+            style="text-Decoration: none;"
+          class="fs-5"
+
+          >
+            ○
+            Terms of Conditions
+        </a>
+        </span>
+        <span class="fs-lg-5 fs-6">
+          <a
+            href="/blogs"
+            style="text-Decoration: none;"
+          class="fs-5"
+
+          >
+          ○
+            Our Blogs
+        </a>
+        </span>
+      </div>
+
       <div class="d-flex justify-content-around gap-lg-4 gap-2 py-4">
         <div class="sm-link">
           <a href="https://wa.me/919971226013" target="_blank">
             <svg
               style="--hover-color: #51ef73; animation-delay: 200ms"
-              fill="#000000"
+              fill="#ffffff"
               viewBox="0 0 16 16"
               height="48"
               width="48"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
-                ></path>
-                <path
-                  d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
-                ></path>
+                <path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"></path>
+                <path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"></path>
               </g>
             </svg>
           </a>
         </div>
         <div class="sm-link">
-          <a href="https://www.instagram.com/homeopathy_care7/" target="_blank">
+          <!-- <a href="https://www.instagram.com/homeopathy_care7/" target="_blank"> -->
             <svg
               style="--hover-color: #873ab1"
               viewBox="-2.4 -2.4 28.80 28.80"
@@ -1037,7 +1076,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 stroke-linecap="round"
@@ -1048,23 +1087,23 @@
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                  fill="#0F0F0F"
+                  fill="#ffffff"
                 ></path>
                 <path
                   d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                  fill="#0F0F0F"
+                  fill="#ffffff"
                 ></path>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                  fill="#0F0F0F"
+                  fill="#ffffff"
                 ></path>
               </g>
             </svg>
-          </a>
+          <!-- </a> -->
         </div>
-        <div class="sm-link">
+        <div className="sm-link">
           <a href="https://www.youtube.com/@CARE-7-HCS-2021" target="_blank">
             <svg
               style="--hover-color: #ff0000; animation-delay: 400ms"
@@ -1074,7 +1113,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 stroke-linecap="round"
@@ -1085,13 +1124,13 @@
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
-                  fill="#0F0F0F"
+                  fill="#ffffff"
                 ></path>
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
-                  fill="#0F0F0F"
+                  fill="#ffffff"
                 ></path>
               </g>
             </svg>

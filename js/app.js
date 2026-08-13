@@ -1,7 +1,7 @@
 // Plans section button
 const button = document.getElementsByClassName("contact-us");
 const contact_us_section = document.getElementById("contact-us");
-
+const date = new Date();
 for (let i = 0; i < button.length; i++) {
   const element = button[i];
   element.addEventListener("click", () => {
@@ -91,4 +91,61 @@ query_form.addEventListener("submit", function (event) {
   setTimeout(() => {
     success_modal.show();
   }, 10000);
+});
+
+const contactUsForm = document.getElementById("query-form");
+contactUsForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const firstname = document.getElementById("firstname").value;
+  const lastname = document.getElementById("lastname").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const consultation_preference = document.getElementById("preference").value;
+  const consent = document.getElementById("consent").value;
+  const acknowledgement = document.getElementById("acknowledgement").value;
+
+  if (!consent || !acknowledgement) {
+    alert("Kindly give consent and acknowledgement");
+  }
+
+  text = `
+    🔔 New contact form submission:
+    Name : "${firstname} ${lastname}"
+    Email : "${email}"
+    Contact Number : "${phone}"
+    Consultation Preference : "${consultation_preference}"
+    Consent : ${consent ? "Given" : "Not Given"}
+    Acknowledgement : ${acknowledgement ? "Yes" : "No"}
+    Timestamp : "${date.toDateString()}"`;
+  const TELEGRAM_BOT_TOKEN = "8738497397:AAHuyk9_KXvKY4G0_WQa7_TecEwGgCGrRcQ";
+  const PERSONAL_CHAT_ID = "6289559837";
+
+  let url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: PERSONAL_CHAT_ID,
+        text: text,
+        parse_mode: "Markdown",
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.ok) {
+      alert("Message sent successfully!");
+      query_form.reset();
+    } else {
+      alert("Error: " + result.description);
+    }
+  } catch (error) {
+    console.error("Fetch error:", error);
+    alert("Failed to send message. Check console for details.");
+  }
 });

@@ -1,5 +1,11 @@
 .about-us {
   position: relative;
+  height: 100vh !important;
+  overflow: hidden;
+
+  .grayed-out-area {
+    background: linear-gradient(to bottom, transparent, var(--base-bg-color));
+  }
 
   .bg-blurs {
     &:first-child {

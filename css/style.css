@@ -82,11 +82,14 @@ strong,
 
     animation: none;
     &::before {
-      content: "Book your consultation on whatsapp @₹199";
+      content: "Book your consultation on whatsapp @ ₹199";
 
       font-size: 0.8rem;
+      text-align: center;
       position: absolute;
-      backdrop-filter: blur(10px);
+      font-weight: 500;
+      /* backdrop-filter: blur(10px); */
+      background: white;
       width: 10rem;
       right: 1.5rem;
       bottom: 1.5rem;
@@ -162,5 +165,14 @@ strong,
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+#query-form {
+  input,
+  select {
+    border-width: 0.1rem;
+    outline-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
   }
 }

@@ -8,4 +8,14 @@ footer {
       }
     }
   }
+
+  .links-container {
+    span.fs-lg-5.fs-6 a {
+      color: white;
+    }
+
+    span.fs-lg-5.fs-6:hover a {
+      color: black !important;
+    }
+  }
 }
