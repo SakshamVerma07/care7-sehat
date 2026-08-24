@@ -17,16 +17,27 @@
         font-family: var(--subheading-font);
         font-weight: 600;
         border-radius: 2rem;
-        &:hover {
-          color: white;
-          background: var(--accent-color);
-        }
-      }
+        position: relative;
 
-      &.active {
-        a {
-          color: white;
-          background: var(--accent-color);
+        span {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            transform: scaleX(0);
+            background: var(--accent-color);
+            border-radius: 100px;
+            bottom: -0.5rem;
+            transition-duration: 200ms;
+          }
+        }
+        &:hover span {
+          color: var(--accent-color);
+          &::before {
+            transform: scaleX(1);
+          }
         }
       }
     }
@@ -37,8 +48,14 @@
 .navbar:has(a.active) {
   li:has(a.active) {
     a {
-      color: white;
-      background: var(--accent-color);
+      color: var(--accent-color);
+      /* background: var(--accent-color); */
+    }
+
+    a span {
+      &::before {
+        transform: scaleX(1);
+      }
     }
   }
 }

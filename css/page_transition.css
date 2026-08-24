@@ -1,0 +1,43 @@
+/* .doctor-image-team-page,
+.doctor-image-doctor-detail-page {
+  view-transition-name: team-to-individual-doctor-page;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(page-content) {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+::view-transition-old(page-content) {
+  animation-name: slide-out;
+}
+
+::view-transition-new(page-content) {
+  animation-name: slide-in;
+}
+
+main {
+  view-transition-name: page-content;
+}
+
+/* Enable the code below to see the article image transition */
+
+/* .card img, .hero-image {
+    view-transition-name: article-image;
+  }
+
+@keyframes slide-out {
+  to {
+    translate: -100vw;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    translate: 100vw;
+  }
+} */

@@ -9,7 +9,8 @@
 
   /* Colors */
   --base-bg-color: #f8fafb; /*Main BG*/
-  --accent-color: #82c0cc; /*Typography, accent*/
+  --accent-color: #515fce; /*Typography, accent*/
+  --secondry-accent-color: #82c0cc; /*Typography, accent*/
   --secondary-bg-color: #d8e9eb; /*Section BG*/
   --font-color: #000000a6;
   --faded-font-color: #212529bf;
@@ -64,7 +65,7 @@ strong,
 .btn {
   font-family: var(--normal-font);
   font-weight: 600;
-  --bs-btn-bg: var(--accent-color) !important;
+  --bs-btn-bg: var(--secondry-accent-color) !important;
   border-width: 0.2rem;
   --bs-btn-border-color: rgb(from var(--accent-color) 0 150 150);
   --bs-btn-hover-bg: rgb(from var(--accent-color) 0 125 125);
@@ -210,4 +211,14 @@ strong,
 footer {
   background: hsl(from var(--accent-color) h s 30);
   border-top: 2px solid white;
+}
+
+.btn.btn-primary {
+  background: #515fce;
+  border-color: #515fce !important;
+  border-top-color: #515fce !important;
+  border-left-color: #515fce !important;
+  border-right-color: #515fce !important;
+  border-bottom-color: #515fce !important;
+  outline-color: #515fce;
 }

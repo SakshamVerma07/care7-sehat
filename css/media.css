@@ -20,7 +20,7 @@
 
   .hero {
     background-image: url(../Static/Images/herbg-small.png);
-    background-size: contain;
+    background-size: cover;
     background-position: 0 0;
     img {
       display: none;
@@ -30,6 +30,9 @@
       div:has(.btn) {
         align-self: center;
         scale: 1.1;
+      }
+      #hero-text {
+        font-size: 2.5rem !important;
       }
     }
     .desc {
@@ -48,6 +51,11 @@
     }
     .card#most-popular {
       scale: 1;
+
+      &::after {
+        opacity: 1 !important;
+        scale: 1 !important;
+      }
     }
 
     .services-container {
@@ -102,7 +110,7 @@
     }
     .book-now {
       background: #515fce;
-      border-color: #0f143d;
+      border-color: #515fce;
       scale: 1.4;
     }
   }
@@ -147,8 +155,10 @@
 
       .container-model {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 1rem;
 
         .doctors {
@@ -156,9 +166,15 @@
           /* background: red; */
           flex-direction: column;
           padding: 1rem;
-
+          width: 282px;
           img {
+            aspect-ratio: 1/1;
+            width: 250px;
             border-radius: 0.7rem;
+          }
+
+          span {
+            word-wrap: normal;
           }
 
           span.name {
@@ -167,7 +183,14 @@
           }
 
           span.speciality {
-            line-height: 0.5;
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+
+          span.title {
+            font-size: 0.9rem;
+            line-height: 1.2;
+            opacity: 0.7;
           }
         }
       }
@@ -190,9 +213,397 @@
     svg {
       width: 2rem;
       &:not(#location-pin) {
-        animation: colorchange 2s linear infinite;
+        fill: var(--hover-color);
+        /* animation: colorchange 2s linear infinite; */
         * {
-          animation: colorchange 1s linear infinite;
+          /* animation: colorchange 1s linear infinite; */
+          fill: var(--hover-color);
+        }
+      }
+    }
+  }
+
+  /* Team Page */
+  #team-main-container {
+    padding-inline: 2rem;
+    #main-container {
+      grid-template-columns: 1fr;
+
+      .doctors-list-item {
+        .contents {
+          margin-top: 1rem;
+          span.name {
+            font-size: 1.75rem;
+          }
+
+          span.degree,
+          span.doctor-title {
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: var(--normal-font);
+          }
+
+          .trust-metrics {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* Individual Team Page */
+  .doctor-page-container {
+    #main-contents-div {
+      grid-template-columns: 1fr 1fr;
+      height: auto;
+      grid-template-rows: auto;
+
+      #top-position-bar {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+      }
+
+      #doctor-image {
+        grid-column: 1/3;
+        height: 300px;
+        padding-inline: 1rem;
+
+        #yoe-box {
+          display: none;
+        }
+      }
+
+      #doctor-main-details {
+        grid-column: 1/3;
+        padding: 2rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 30px auto;
+
+        #title-badge {
+          grid-column: 1/7;
+        }
+
+        #doctor-name {
+          font-size: 2rem;
+          margin-block: 1rem;
+        }
+
+        #doctor-title {
+          grid-column: 1/7;
+          font-size: 1rem;
+          text-wrap: pretty;
+          margin-bottom: 1rem;
+        }
+
+        #doctor-about {
+          grid-column: 1/7;
+          font-size: 0.9rem;
+          margin-block: 1rem;
+        }
+
+        #badge-block {
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: none;
+        }
+
+        #doctor-book-appointment-button {
+          grid-column: 1/7;
+          justify-content: center;
+          margin-block: 1rem;
+
+          .btn {
+            font-size: 1rem;
+            width: 100%;
+            height: 100%;
+          }
+
+          .btn:active {
+            color: var(--accent-color) !important;
+          }
+
+          .btn:hover {
+            background: hsl(from var(--accent-color) h s 40);
+            border-color: hsl(from var(--accent-color) h s 40) !important;
+          }
+        }
+      }
+
+      #doctor-about-and-area-of-expertise-section-bg {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-right: 0;
+        gap: 1rem;
+
+        > div {
+          background: white;
+          border-radius: 1rem;
+          width: 100%;
+          height: 100%;
+        }
+
+        #doctor-area-od-expertise {
+          > div {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+          }
+        }
+      }
+
+      #tags-block {
+        margin-top: 1rem;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+        gap: 1rem;
+
+        > div {
+          border-radius: 1rem !important;
+        }
+
+        > div:nth-child(1),
+        > div:nth-child(2) {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      #doctor-edu-quali-and-consultation-process-bg {
+        grid-template-columns: 1fr;
+        margin-block: 1rem;
+        padding: 0;
+
+        #doctor-qualification-section {
+          padding: 1rem 2rem;
+          display: flex;
+          flex-direction: column;
+
+          > span:first-child {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: hsl(from var(--accent-color) h s 20);
+          }
+
+          .qualification-container {
+            gap: 1rem;
+            width: 100%;
+
+            .qualification {
+              .bar {
+                display: none;
+              }
+            }
+          }
+        }
+
+        #our-consultation-process {
+          > span:first-child {
+            font-size: 1.3rem;
+          }
+
+          .consultation-process-container {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr;
+
+            gap: 2rem;
+
+            .process-step {
+              height: 100%;
+              z-index: 2;
+
+              .step-number {
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(from var(--accent-color) r g b / 0.1);
+                border-radius: 100%;
+                padding: 0.2rem;
+                font-weight: bolder;
+                font-size: 1.3rem;
+                height: 40px;
+                color: rgb(from var(--accent-color) r g b / 0.8);
+              }
+
+              > .icon {
+                background: rgb(from var(--accent-color) r g b / 0.1);
+                padding: 1rem;
+                border-radius: 100%;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                  width: 3rem;
+                  height: 3rem;
+                  fill: rgb(from var(--accent-color) r g b / 0.8);
+                }
+              }
+
+              > .icon.even {
+                background: hsl(from var(--accent-color) 150 s 70 / 0.2);
+                padding: 1rem;
+                border-radius: 100%;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                  width: 3rem;
+                  height: 3rem;
+                  fill: hsl(from var(--accent-color) 150 s 30 / 1);
+                }
+              }
+
+              .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.2rem;
+
+                > span:first-child {
+                  text-wrap: nowrap;
+                  font-weight: bold;
+                  color: hsl(from var(--accent-color) h s 20);
+                }
+
+                > span:nth-child(2) {
+                  text-align: center;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  color: #000000aa;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #testimonials-and-faqs {
+        grid-template-columns: 1fr;
+        padding: 0;
+
+        > div {
+          background: white;
+          border-radius: 1rem;
+          width: auto;
+          height: 100%;
+        }
+
+        #testimonials {
+          display: none;
+          visibility: hidden;
+          .testimonial-header span {
+            font-size: 1.3rem;
+          }
+
+          #testimonial-container {
+            font-size: 5rem;
+            color: rgb(from var(--accent-color) r g b / 0.6);
+            font-family: Georgia;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+
+            #testimonial-carousel {
+              position: relative;
+              margin-left: 1rem;
+              gap: 1.5rem;
+              transition: transform 0.4s ease-in-out;
+              width: 100%;
+              padding-top: 1rem;
+              font-size: 1rem;
+              font-weight: 600;
+              color: #000000aa;
+              overflow-x: auto;
+              scroll-behavior: smooth;
+              scroll-snap-type: x mandatory;
+              scrollbar-color: var(--accent-color) var(--base-bg-color);
+              scrollbar-width: thin;
+              --ms-overflow-style: none;
+
+              .testimonial {
+                flex: 0 0 100%;
+                min-width: 100%;
+                scroll-snap-align: start;
+                .rating {
+                  display: flex;
+                  align-items: end;
+                  gap: 0.5rem;
+                  color: #000;
+                  font-size: 1.3rem;
+                  svg {
+                    width: 2rem;
+                    height: 2rem;
+                  }
+                }
+                .patient {
+                  display: flex;
+                  justify-content: end;
+                }
+              }
+            }
+          }
+        }
+
+        #faqs {
+          padding: 1.5rem 2rem;
+          border-radius: 1.5rem;
+          display: flex;
+          /* justify-content: space-between; */
+          flex-direction: column;
+          position: relative;
+
+          span {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #111827;
+          }
+
+          #faqAccordion {
+            margin-top: 2rem;
+          }
+        }
+      }
+
+      #start-your-journey {
+        padding: 0;
+        margin-top: 1rem;
+
+        > div {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          gap: 2rem;
+          padding: 2rem 2rem;
+          border-radius: 1rem;
+
+          #left {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 0.5rem;
+
+            span:first-child {
+              font-weight: bold;
+              font-size: 1.5rem;
+            }
+
+            span:nth-child(2) {
+              font-size: 0.8rem;
+            }
+          }
+
+          #mid {
+            display: none;
+            visibility: hidden;
+          }
         }
       }
     }
@@ -205,15 +616,16 @@
     background-size: cover;
   }
 }
+
 @keyframes colorchange {
   0% {
-    fill: black;
+    fill: white;
   }
   50% {
     fill: var(--hover-color);
   }
   100% {
-    fill: black;
+    fill: white;
   }
 }
 

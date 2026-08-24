@@ -16,10 +16,11 @@
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/page_transition.css" />
   <link rel="shortcut icon" href="Static/Images/icon.ico" type="image/x-icon" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+<body>
   <!-- Chat Button -->
   <div class="whatsapp-button position-fixed" style="z-index: 1031; bottom: 2rem; right: 3rem">
     <a href="https://wa.me/919971226013" target="_blank">
@@ -80,13 +81,13 @@
           </a>
         </li>
         <li class="about nav-item">
-          <a href="#about-us" class="nav-link px-3 ms-2">
-            <span>About</span>
+          <a href="/team.html" class="nav-link px-3 ms-2">
+            <span>Our Team</span>
           </a>
         </li>
 
         <li class="home nav-item" aria-current="page">
-          <a href="#home" class="nav-link px-3 ms-2">
+          <a href="/" class="nav-link active px-3 ms-2">
             <span>Home</span>
           </a>
         </li>
@@ -100,26 +101,35 @@
     <div
       class="text-box col-lg-6 col-12 d-flex justify-content-center align-items-start flex-column gap-3 ps-0 ps-lg-5">
       <div class="title align-self-center align-self-lg-start">
-        <div class="text display-4 fw-bold col-12 d-flex justify-content-center text-wrap">
-          CARE 7-SEHAT
+        <div id="hero-text" class="text display-5 fw-bold col-12 d-flex justify-content-center text-wrap text-center text-lg-start mb-3">
+          <!-- CARE 7-SEHAT -->
+           Holistic Health Care for You & Your Family
         </div>
-        <div class="text fs-5 col-12 text-center fw-semibold">
+        <div class="text text-center text-lg-start fs-5 col-12 fw-semibold mb-3">
           "Your Personal Health Mentors"
         </div>
       </div>
-      <div id="hero-main-text" class="desc col-lg-10 col-12">
-        <span class="text fs-5 text-left">A New Era of Digital Holistic Healthcare, Online Homeopathic &
+      <div id="hero-main-text" class="desc col-lg-10 col-12 mb-4">
+        <span class="text text-left">
+          <!-- A New Era of Digital Holistic Healthcare, Online Homeopathic &
           Wellness Care
           <span class="w-75 text-left">
-            Anytime, Anywhere & Affordable</span></span>
+            Anytime, Anywhere & Affordable</span> -->
+            Personalized online homeopathic consultation, wellness guidance, and continuous health support from the comfort of your home.
+          </span>
       </div>
 
       <!-- book an appointment button -->
-      <div class="col-lg-8">
+      <div class="col-lg-8 d-flex gap-3 flex-row">
         <a style="text-transform: uppercase;" href="https://wa.me/919971226013" target="_blank"
           rel="noopener noreferrer"
-          class="text-decoration-none text-white btn btn-primary rounded-pill px-3 py-2 align-self-lg-start align-items-center">
+          class="text-decoration-none text-white btn btn-secondary rounded-pill px-3 py-2 align-self-lg-start align-items-center">
           Book Now
+        </a>
+        <a style="text-transform: uppercase;" href="https://wa.me/919971226013" target="_blank"
+          rel="noopener noreferrer"
+          class="text-decoration-none text-white btn btn-secondary rounded-pill px-3 py-2 align-self-lg-start align-items-center">
+          Learn More
         </a>
       </div>
     </div>
@@ -132,7 +142,7 @@
     id="about-us">
     <div id="grayed-out-area"
       class="grayed-out-area w-100 h-25 position-absolute bottom-0 d-flex justify-content-center align-items-end">
-      <button class="btn btn-primary rounded-pill" onclick="readMore()">Read More</button>
+      <button class="btn btn-primary rounded-pill px-4" onclick="readMore()">Read More</button>
     </div>
     <div class="bg-blurs"></div>
     <div class="bg-blurs"></div>
@@ -646,33 +656,36 @@
 
       <!-- Low vw devices/Mobile -->
       <div class="container-model">
-
         <div class="doctors">
           <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
           <span class="name fs-4">Dr. Pooja Verma</span>
-          <span class="speciality">Lorem, ipsum.</span>
+          <span class="speciality">BHMS | PGDHA | CNCC</span>
+          <span class="title">Founder & Senior Homeopathy Specialists</span>
         </div>
 
         <div class="doctors">
           <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
           <span class="name fs-4">Dr. Rajnee Pachauri</span>
-          <span class="speciality">Lorem, ipsum.</span>
+          <span class="speciality">BHMS</span>
+          <span class="title">Senior Homeopathy Specialists</span>
         </div>
 
         <div class="doctors">
           <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
           <span class="name fs-4">Dt. Sarika Tyagi</span>
-          <span class="speciality">Lorem, ipsum.</span>
+          <span class="speciality">BHMS</span>
+          <span class="title">Senior Dietician</span>
         </div>
 
         <div class="doctors">
           <img src="Static/Images/Non-icon-images/2(1x1).jpg" height="250px" alt="">
-          <span class="name fs-4">Dr. Garima Gu</span>
-          <span class="speciality">Lorem, ipsum.</span>
+          <span class="name fs-4">Dr. Garima Gupta</span>
+          <span class="speciality">BHMS</span>
+          <span class="title">Senior Homeopathy Specialists</span>
         </div>
       </div>
 
-      <span onclick="window.location.href = '/team'" class="position-absolute bottom-0 fs-4 fw-bold"
+      <span class="position-absolute bottom-0 fs-4 fw-bold"
         style="right: 2rem; color: hsl(from var(--accent-color) h s 40 ); cursor: pointer;">See All...</span>
       <!-- Set up team page then use this -->
       <!-- <span onclick="window.location.href = '/team'" class="position-absolute bottom-0 fs-4 fw-bold" style="right: 2rem; color: hsl(from var(--accent-color) h s 40 ); cursor: pointer;">See All...</span> -->
@@ -803,8 +816,8 @@
 
   <!-- Footer -->
   <footer class="d-lg-flex d-none justify-content-evenly align-items-center px-2 px-lg-2 py-4 text-white" style="
-        background: hsl(from var(--accent-color) h s 30);
-        border-top: 2px solid white'">
+        background: hsl(from var(--accent-color) h s 40);
+        border-top: 2px solid white">
     <div class="address d-lg-none">
       <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
         <svg id="location-pin" viewBox="0 0 24 24" height="48" width="48" fill="none"
@@ -929,6 +942,7 @@
     </div>
   </footer>
 
+  <!-- Footer for Mobile -->
   <footer class="d-lg-none d-flex flex-column justify-content-evenly align-items-center px-2 px-lg-2 py-4 text-white">
     <div class="d-flex justify-content-around align-items-center w-100">
 

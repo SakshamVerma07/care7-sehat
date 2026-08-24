@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <title>Care 7 | Homeopathic Clinic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/ourTeamPage.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/doctor_page.css" />
+    <link rel="stylesheet" href="css/page_transition.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="shortcut icon"
+      href="Static/Images/icon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- Chat Button -->
+    <div
+      class="whatsapp-button position-fixed"
+      style="z-index: 1031; bottom: 2rem; right: 3rem"
+    >
+      <a href="https://wa.me/919971226013" target="_blank">
+        <svg
+          viewBox="0 0 32 32"
+          height="48"
+          width="48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+              fill="#BFC8D0"
+            ></path>
+            <path
+              d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+              fill="url(#paint0_linear_87_7264)"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+              fill="white"
+            ></path>
+            <path
+              d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+              fill="white"
+            ></path>
+            <defs>
+              <linearGradient
+                id="paint0_linear_87_7264"
+                x1="26.5"
+                y1="7"
+                x2="4"
+                y2="28"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#5BD066"></stop>
+                <stop offset="1" stop-color="#27B43E"></stop>
+              </linearGradient>
+            </defs>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar py-0 navbar-expand-lg px-2 px-lg-4 w-100 fixed-top justify-content-between justify-content-xxl-around pt-1"
+      data-bs-theme="light"
+      id="navbar"
+    >
+      <!-- Icon -->
+      <div class="d-flex align-items-center logo-box">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img
+            src="Static/Images/logo_img.jpeg"
+            class="d-inline-block align-text-top"
+            height="48"
+            alt="logo"
+          />
+          <span class="fs-4"> CARE 7 Sehat </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Links -->
+      <div
+        class="collapse navbar-collapse flex-grow-0"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mt-2 mt-lg-0 d-flex gap-1">
+          <li class="Contact nav-item">
+            <a href="#contact-us" class="nav-link px-3 ms-2">
+              <span>Contact</span>
+            </a>
+          </li>
+          <li class="plans nav-item">
+            <a href="/#plans" class="nav-link px-3 ms-2">
+              <span>Plans</span>
+            </a>
+          </li>
+          <li class="about nav-item">
+            <a href="/team" class="nav-link active px-3 ms-2">
+              <span>Our Team</span>
+            </a>
+          </li>
+
+          <li class="home nav-item">
+            <a href="/" class="nav-link px-3 ms-2">
+              <span>Home</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="doctor-page-container container-fluid">
+      <div id="main-contents-div">
+        <div id="top-position-bar" class="grid-item">
+          <a href="/">Home</a>
+          <svg
+            width="1.5rem"
+            height="1.5rem"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 7L15 12L10 17"
+              stroke="var(--accent-color)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="/team.html">Our Team</a>
+          <svg
+            width="1.5rem"
+            height="1.5rem"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 7L15 12L10 17"
+              stroke="var(--accent-color)"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="">Dt. Sarika Tyagi</a>
+        </div>
+
+        <div id="doctor-image" class="grid-item">
+          <div id="yoe-box">
+            <span>15+</span>
+            <span>Years of Experience</span>
+          </div>
+          <img src="Static/drsarika.jpeg" alt="" />
+        </div>
+
+        <div id="doctor-main-details" class="grid-item">
+          <div id="title-badge" class="doctor-main-detail-grid-item">
+            Senior Specialist
+          </div>
+
+          <div id="doctor-name" class="doctor-main-detail-grid-item">
+            Dr. Rajnee Pachauri
+          </div>
+
+          <div id="doctor-title" class="doctor-main-detail-grid-item">
+            Senior Homeopathic Specialist
+          </div>
+
+          <div id="qualification-block" class="doctor-main-detail-grid-item">
+            <div
+              id="qualification-1"
+              class="doctor-main-detail-grid-item qualification-badge"
+            >
+              BHMS
+            </div>
+            <!-- <div
+              id="qualification-2"
+              class="doctor-main-detail-grid-item qualification-badge"
+            >
+              PGDHA
+            </div>
+            <div
+              id="qualification-3"
+              class="doctor-main-detail-grid-item qualification-badge"
+            >
+              CNCC
+            </div> -->
+          </div>
+
+          <div id="doctor-about" class="doctor-main-detail-grid-item">
+            Dr. Rajnee Pachauri is a senior specialist in homeopathy with more
+            than 15 years of dedicated experience in Homeopathy, Dr. Rajnee
+            believes in treating the person, not merely the disease. Her
+            approach is centred on individualized care, in-depth case analysis,
+            and holistic healing, with clinical experience in skin disorders,
+            women’s health, and child immunity.
+          </div>
+
+          <div id="badge-block" class="doctor-main-detail-grid-item">
+            <div id="badge-1" class="doctor-badge">
+              <div class="doctor-badge-img-cont">
+                <svg
+                  fill="#000000"
+                  viewBox="-2.5 0 19 19"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="cf-icon-svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.56 10.11v2.046a3.827 3.827 0 1 1-7.655 0v-.45A3.61 3.61 0 0 1 .851 8.141V5.25a1.682 1.682 0 0 1 .763-1.408 1.207 1.207 0 1 1 .48 1.04.571.571 0 0 0-.135.368v2.89a2.5 2.5 0 0 0 5 0V5.25a.57.57 0 0 0-.108-.334 1.208 1.208 0 1 1 .533-1.018 1.681 1.681 0 0 1 .683 1.352v2.89a3.61 3.61 0 0 1-3.054 3.565v.45a2.719 2.719 0 0 0 5.438 0V10.11a2.144 2.144 0 1 1 1.108 0zm.48-2.07a1.035 1.035 0 1 0-1.035 1.035 1.037 1.037 0 0 0 1.036-1.035z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="doctor-badge-details-cont">
+                <span>2000+</span>
+                <span>Patients Treated</span>
+              </div>
+            </div>
+
+            <div id="badge-2" class="doctor-badge">
+              <div class="doctor-badge-img-cont">
+                <svg
+                  style="
+                    stroke: hsl(from var(--accent-color) 150 s 30 / 0.4);
+                    fill: none;
+                  "
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="#000000"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M45.41,11.16l.86,2.61a3.75,3.75,0,0,0,1.5,2L50,17.21a3.85,3.85,0,0,1,1.43,4.62l-.84,2.09a3.83,3.83,0,0,0,0,2.88l.83,2a3.83,3.83,0,0,1-1.32,4.58L48.13,34.8a3.86,3.86,0,0,0-1.46,2.08L46,39.32a3.84,3.84,0,0,1-4,2.78l-2.1-.18a3.88,3.88,0,0,0-2.74.84l-2,1.63a3.83,3.83,0,0,1-4.85,0L28.54,43a3.85,3.85,0,0,0-2.45-.88H23a3.83,3.83,0,0,1-3.74-3l-.55-2.35a3.82,3.82,0,0,0-1.58-2.31L15.3,33.19a3.84,3.84,0,0,1-1.45-4.48l.86-2.36a3.86,3.86,0,0,0,0-2.66l-.77-2.06a3.86,3.86,0,0,1,1.51-4.58l2-1.31a3.87,3.87,0,0,0,1.61-2.19l.61-2.18a3.85,3.85,0,0,1,4-2.79l1.93.17a3.88,3.88,0,0,0,2.74-.84l1.83-1.48a3.84,3.84,0,0,1,4.87,0L36.7,7.81a3.82,3.82,0,0,0,2.75.88l2-.15A3.84,3.84,0,0,1,45.41,11.16Z"
+                    ></path>
+                    <path
+                      d="M44.59,41.57l7,12.21c.18.31,0,.64-.23.55l-8.61-3.5a.24.24,0,0,0-.31.19l-1.06,9c-.06.29-.42.25-.6-.06L32.65,45.25"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M32.65,45.25,25.14,60c-.19.31-.53.35-.6.07l-1.27-9.2a.24.24,0,0,0-.31-.18L14.59,54.3c-.28.08-.43-.24-.24-.56l7-12.17"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M32.74,16.89l2.7,5.49a.1.1,0,0,0,.08.05l6,.88c.08,0,.12.12.06.17l-4.38,4.27a.09.09,0,0,0,0,.09l1,6a.1.1,0,0,1-.14.11l-5.42-2.85a.07.07,0,0,0-.09,0L27.19,34a.11.11,0,0,1-.15-.11l1-6a.1.1,0,0,0,0-.09l-4.39-4.27a.11.11,0,0,1,.06-.17l6.05-.88a.09.09,0,0,0,.08-.05l2.71-5.49A.1.1,0,0,1,32.74,16.89Z"
+                      stroke-linecap="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="doctor-badge-details-cont">
+                <span>15+</span>
+                <span>Years Experience</span>
+              </div>
+            </div>
+
+            <div id="badge-3" class="doctor-badge">
+              <div class="doctor-badge-img-cont">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M10.1497 8.80219L9.70794 9.40825L10.1497 8.80219ZM12 3.10615L11.4925 3.65833C11.7794 3.9221 12.2206 3.9221 12.5075 3.65833L12 3.10615ZM13.8503 8.8022L14.2921 9.40826L13.8503 8.8022ZM12 9.67598L12 10.426H12L12 9.67598ZM10.5915 8.19612C9.90132 7.69298 9.16512 7.08112 8.60883 6.43627C8.03452 5.77053 7.75 5.18233 7.75 4.71476H6.25C6.25 5.73229 6.82845 6.66885 7.47305 7.41607C8.13569 8.18419 8.97435 8.87349 9.70794 9.40825L10.5915 8.19612ZM7.75 4.71476C7.75 3.65612 8.27002 3.05231 8.8955 2.84182C9.54754 2.62238 10.5199 2.76435 11.4925 3.65833L12.5075 2.55398C11.2302 1.37988 9.70254 0.987559 8.41707 1.42016C7.10502 1.8617 6.25 3.09623 6.25 4.71476H7.75ZM14.2921 9.40826C15.0257 8.8735 15.8643 8.18421 16.527 7.41608C17.1716 6.66886 17.75 5.73229 17.75 4.71475H16.25C16.25 5.18234 15.9655 5.77055 15.3912 6.43629C14.8349 7.08113 14.0987 7.69299 13.4085 8.19613L14.2921 9.40826ZM17.75 4.71475C17.75 3.09622 16.895 1.8617 15.5829 1.42016C14.2975 0.987559 12.7698 1.37988 11.4925 2.55398L12.5075 3.65833C13.4801 2.76435 14.4525 2.62238 15.1045 2.84181C15.73 3.0523 16.25 3.65612 16.25 4.71475H17.75ZM9.70794 9.40825C10.463 9.95869 11.0618 10.426 12 10.426L12 8.92598C11.635 8.92598 11.4347 8.81074 10.5915 8.19612L9.70794 9.40825ZM13.4085 8.19613C12.5653 8.81074 12.365 8.92598 12 8.92598L12 10.426C12.9382 10.426 13.537 9.9587 14.2921 9.40826L13.4085 8.19613Z"
+                      fill="#1C274C"
+                    ></path>
+                    <path
+                      d="M4 21.3884H6.25993C7.27079 21.3884 8.29253 21.4937 9.27633 21.6964C11.0166 22.0549 12.8488 22.0983 14.6069 21.8138M13.6764 18.5172C13.7962 18.5033 13.911 18.4874 14.0206 18.4699C14.932 18.3245 15.697 17.8375 16.3974 17.3084L18.2046 15.9433C18.8417 15.462 19.7873 15.4619 20.4245 15.943C20.9982 16.3762 21.1736 17.0894 20.8109 17.6707C20.388 18.3487 19.7921 19.216 19.2199 19.7459M13.6764 18.5172C13.6403 18.5214 13.6038 18.5254 13.5668 18.5292M13.6764 18.5172C13.8222 18.486 13.9669 18.396 14.1028 18.2775C14.746 17.7161 14.7866 16.77 14.2285 16.1431C14.0991 15.9977 13.9475 15.8764 13.7791 15.7759C10.9817 14.1074 6.62942 15.3782 4 17.2429M13.6764 18.5172C13.6399 18.525 13.6033 18.5292 13.5668 18.5292M13.5668 18.5292C13.0434 18.5829 12.4312 18.5968 11.7518 18.5326"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="doctor-badge-details-cont">
+                <span>Holistic</span>
+                <span>Care Approach</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="doctor-book-appointment-button"
+            class="doctor-main-detail-grid-item"
+          >
+            <button class="btn btn-primary btn-lg">Book Appointment</button>
+          </div>
+        </div>
+
+        <div
+          id="doctor-about-and-area-of-expertise-section-bg"
+          class="grid-item"
+        >
+          <div id="doctor-about-section">
+            <span
+              >About Dr. Rajnee Pachauri
+              <hr />
+            </span>
+            <span>
+              With over 15 years of dedicated experience in Homeopathy, Dr.
+              Rajnee believe in treating the person, not merely the disease. My
+              approach is centred on individualized care, in-depth case
+              analysis, and holistic healing, with clinical experience in skin
+              disorders, women’s health, and child immunity. She focuses on
+              understanding the root causes and treating each patient as an
+              individual. Her approach combines compassionate patient care,
+              detailed case analysis, and long-term wellness.
+            </span>
+            <span id="signature"> Rajnee Pachauri </span>
+          </div>
+
+          <div id="doctor-area-od-expertise" class="d-flex flex-column">
+            <span>Area of Expertise</span>
+            <div>
+              <div>
+                <div class="aoe-img-cont">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                  >
+                    <path
+                      d="M80-120v-360q0-33 23.5-56.5T160-560h200v80q0 50 35 85t85 35q50 0 85-35t35-85v-80h200q33 0 56.5 23.5T880-480v360H80Zm80-80h640v-280H680q0 83-58.5 141.5T480-280q-83 0-141.5-58.5T280-480H160v280Zm320-240q-17 0-28.5-11.5T440-480q0-109 25-215t109-175q13-11 29-9.5t27 14.5q11 13 9.5 29T625-809q-70 59-87.5 148T520-480q0 17-11.5 28.5T480-440Zm-228.5 91.5Q260-357 260-370t-8.5-21.5Q243-400 230-400t-21.5 8.5Q200-383 200-370t8.5 21.5Q217-340 230-340t21.5-8.5Zm40 100Q300-257 300-270t-8.5-21.5Q283-300 270-300t-21.5 8.5Q240-283 240-270t8.5 21.5Q257-240 270-240t21.5-8.5Zm460-100Q760-357 760-370t-8.5-21.5Q743-400 730-400t-21.5 8.5Q700-383 700-370t8.5 21.5Q717-340 730-340t21.5-8.5ZM160-200h640-640Z"
+                    />
+                  </svg>
+                </div>
+                <div class="aoe-name">Skin Disorders</div>
+              </div>
+
+              <div>
+                <div class="aoe-img-cont">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="#000000"
+                  >
+                    <path
+                      d="m364-102-29-58q-9-17-13-35t-4-37q0-23 6.5-45.5T345-320q8-11 12-23.5t4-26.5q0-16-6-30l-12-28q-10-19-16.5-39t-6.5-41v-152q0-25-17.5-42.5T260-720q-21 0-37 14t-21 34q34 13 56 43.5t22 68.5q0 50-35 85t-85 35q-50 0-85-35t-35-85q0-40 23-71t59-43q5-54 44.5-90t93.5-36q7 0 14 .5t14 2.5q44-23 92.5-33t99.5-10q50 0 98.5 10t92.5 33q7-2 14-2.5t14-.5q55 0 94.5 36t44.5 90q36 12 59 43t23 71q0 50-35 85t-85 35q-50 0-85-35t-35-85q0-38 22-68.5t56-43.5q-5-20-21-34t-38-14q-25 0-42 17.5T640-660v152q0 21-7 41t-16 39q-7 14-12.5 28t-5.5 30q0 14 4 26.5t12 23.5q13 20 20 42.5t7 45.5q0 19-4.5 37T625-160l-29 58-72-36 29-58q5-8 7-17t2-19q0-12-4-23t-10-21q-14-20-21.5-44t-7.5-49q0-23 6.5-43.5T543-453q6-14 11.5-27.5T560-508v-152q0-24 7.5-45.5T589-745q-26-8-53.5-11.5T480-760q-28 0-55.5 3.5T371-745q14 18 21.5 39.5T400-660v152q0 14 5 28t12 27q10 20 17 40.5t7 43.5q0 25-7.5 48.5T412-276q-7 10-10.5 21t-3.5 23q0 10 2 19t7 17l29 58-72 36ZM188.5-531.5Q200-543 200-560t-11.5-28.5Q177-600 160-600t-28.5 11.5Q120-577 120-560t11.5 28.5Q143-520 160-520t28.5-11.5Zm640 0Q840-543 840-560t-11.5-28.5Q817-600 800-600t-28.5 11.5Q760-577 760-560t11.5 28.5Q783-520 800-520t28.5-11.5ZM800-560Zm-640 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="aoe-name">Women's Health</div>
+              </div>
+
+              <div>
+                <div class="aoe-img-cont">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M198-80 40-514.67l204-120.66v-244h136v244l204 120.66L426-80H198Zm482.67 0q-13.67 0-23.5-9.83-9.84-9.84-9.84-23.5 0-13.67 9.84-23.5 9.83-9.84 23.5-9.84h136.66v-96H680.67q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83h136.66v-96H680.67q-13.67 0-23.5-9.84-9.84-9.83-9.84-23.5 0-13.66 9.84-23.5Q667-472 680.67-472h136.66v-96H680.67q-13.67 0-23.5-9.83-9.84-9.84-9.84-23.5 0-13.67 9.84-23.5 9.83-9.84 23.5-9.84h136.66v-96H680.67q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83h164q31.66 0 53.5 21.83Q920-753.67 920-722v566.67q0 31.66-21.83 53.5Q876.33-80 844.67-80h-164Zm-435.34-66.67h133.34l122.66-338.66-139.33-82H262l-139.33 82 122.66 338.66ZM312-357.33Z"
+                    />
+                  </svg>
+                </div>
+                <div class="aoe-name">Hair Problems</div>
+              </div>
+
+              <div>
+                <div class="aoe-img-cont">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="#000000"
+                  >
+                    <path
+                      d="M544.5-504.5Q530-519 530-540t14.5-35.5Q559-590 580-590t35.5 14.5Q630-561 630-540t-14.5 35.5Q601-490 580-490t-35.5-14.5Zm-200 0Q330-519 330-540t14.5-35.5Q359-590 380-590t35.5 14.5Q430-561 430-540t-14.5 35.5Q401-490 380-490t-35.5-14.5Zm27 191.5Q323-346 300-400h360q-23 54-71.5 87T480-280q-60 0-108.5-33Zm-32 164.5q-65.5-28.5-114-77t-77-114Q120-405 120-480t28.5-140.5q28.5-65.5 77-114t114-77Q405-840 480-840t140.5 28.5q65.5 28.5 114 77t77 114Q840-555 840-480t-28.5 140.5q-28.5 65.5-77 114t-114 77Q555-120 480-120t-140.5-28.5ZM678-282q82-82 82-198t-82-198q-82-82-198-82h-12q-6 0-12 2-6 6-8 13t-2 15q0 21 14.5 35.5T496-680q9 0 16.5-3t15.5-3q12 0 20 9t8 21q0 23-21.5 29.5T496-620q-45 0-77.5-32.5T386-730v-6q0-3 1-8-83 30-135 101t-52 163q0 116 82 198t198 82q116 0 198-82ZM480-480Z"
+                    />
+                  </svg>
+                </div>
+                <div class="aoe-name">Child Immunity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tags-block" class="grid-item">
+          <div>
+            <div class="img-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="50px"
+                viewBox="0 -960 960 960"
+                width="50px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34ZM480-400q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-188.5-11.5Q280-423 280-440t11.5-28.5Q303-480 320-480t28.5 11.5Q360-457 360-440t-11.5 28.5Q337-400 320-400t-28.5-11.5ZM640-400q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-188.5-11.5Q280-263 280-280t11.5-28.5Q303-320 320-320t28.5 11.5Q360-297 360-280t-11.5 28.5Q337-240 320-240t-28.5-11.5ZM640-240q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                />
+              </svg>
+            </div>
+            <div class="main-details d-flex flex-column">
+              <span>15+</span>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+          <div>
+            <div class="img-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"
+                />
+              </svg>
+            </div>
+            <div class="main-details d-flex flex-column">
+              <span>2000+</span>
+              <span>Patients Treated</span>
+            </div>
+          </div>
+          <div>
+            <div class="img-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z"
+                />
+              </svg>
+            </div>
+            <div class="main-details d-flex flex-column">
+              <span>4.9/5</span>
+              <span>Patient Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="doctor-edu-quali-and-consultation-process-bg"
+          class="grid-item"
+        >
+          <div id="doctor-qualification-section">
+            <span>Education Qualification </span>
+            <div class="qualification-container d-flex flex-column">
+              <div class="qualification d-flex">
+                <!-- <div class="bar"></div> -->
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="30"
+                    viewBox="0 -960 960 960"
+                    width="30"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="qualification-details d-flex flex-column">
+                  <span>BHMS</span>
+                  <span>Bachelor of Homeopathic Medicine & Surgery</span>
+                </div>
+              </div>
+              <!-- 
+              <div class="qualification d-flex">
+                <div class="bar"></div>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="30"
+                    viewBox="0 -960 960 960"
+                    width="30"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="qualification-details d-flex flex-column">
+                  <span>PGDHA</span>
+                  <span>Postgraduate Diploma in Hospital Administration</span>
+                </div>
+              </div>
+
+              <div class="qualification d-flex">
+                <div class="bar last-qualification"></div>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="30"
+                    viewBox="0 -960 960 960"
+                    width="30"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"
+                    />
+                  </svg>
+                </div>
+                <div class="qualification-details d-flex flex-column">
+                  <span>CNCC</span>
+                  <span>Certificate in Nutrition and Child Care</span>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div id="our-consultation-process">
+            <span>Our Consultation Process</span>
+            <div class="consultation-process-container">
+              <div
+                class="process-step d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">1</div>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"
+                    />
+                  </svg>
+                </div>
+                <div class="details">
+                  <span>Book Appointment</span>
+                  <span class="desc"> Schedule at your convenience </span>
+                </div>
+              </div>
+
+              <div
+                class="process-step d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">2</div>
+                <div class="icon even">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="20px"
+                    viewBox="0 -960 960 960"
+                    width="20px"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M587-371q-35-35-35-85t35-85q35-35 85-35t85 35q35 35 35 85t-35 85q-35 35-85 35t-85-35Zm119-51q14-14 14-34t-14-34q-14-14-34-14t-34 14q-14 14-14 34t14 34q14 14 34 14t34-14ZM432-49v-116.57q0-21.1 10-39.69 10-18.59 28-29.65 32-19.09 66.51-31.19Q571.03-278.19 607-284l65 78 65-78q36.31 5.81 70.65 17.9Q842-254 874-235q18 11 28 29.61 10 18.6 10 39.72V-49H432Zm72-72h145l-69-83q-20.42 5.24-39.71 13.62Q521-182 504-171v50Zm191 0h145v-50q-17-11-36.5-19.5T764-204l-69 83Zm-46 0Zm46 0Zm-479.25-23Q186-144 165-165.15T144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v161q-15-17-33-30t-39-21v-110H216v528h153q-5 12-7 24.67-2 12.66-2 25.33v22H215.75ZM288-600h257q26-23 59-35.5t68-12.5v-24H288v72Zm0 156h192q-2-18 1-36.5t9-35.5H288v72Zm0 156h132q14-11 30.45-18.7 16.44-7.7 33.55-14.3v-39H288v72Zm-72 72v-528 110-14 432Zm456-240Z"
+                    />
+                  </svg>
+                </div>
+                <div class="details">
+                  <span>Book Appointment</span>
+                  <span class="desc"> Schedule at your convenience </span>
+                </div>
+              </div>
+
+              <div
+                class="process-step d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">3</div>
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#000000"
+                  >
+                    <path
+                      d="M200-40v-40q0-139 58-225.5T418-480q-102-88-160-174.5T200-880v-40h80v40q0 11 .5 20.5T282-840h396q1-10 1.5-19.5t.5-20.5v-40h80v40q0 139-58 225.5T542-480q102 88 160 174.5T760-80v40h-80v-40q0-11-.5-20.5T678-120H282q-1 10-1.5 19.5T280-80v40h-80Zm138-640h284q13-19 22.5-38t17.5-42H298q8 22 17.5 41.5T338-680Zm142 148q20-17 39-34t36-34H405q17 17 36 34t39 34Zm-75 172h150q-17-17-36-34t-39-34q-20 17-39 34t-36 34ZM298-200h364q-8-22-17.5-41.5T622-280H338q-13 19-22.5 38T298-200Z"
+                    />
+                  </svg>
+                </div>
+                <div class="details">
+                  <span>Personalised Treatment</span>
+                  <span class="desc">
+                    Customised homeopathic treatment plan
+                  </span>
+                </div>
+              </div>
+
+              <div
+                class="process-step d-flex flex-column gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">4</div>
+                <div class="icon even">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#000000"
+                  >
+                    <path
+                      d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"
+                    />
+                  </svg>
+                </div>
+                <div class="details">
+                  <span>Follow-up & Support</span>
+                  <span class="desc">
+                    Continious support for your entire wellness journey</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="testimonials-and-faqs" class="grid-item">
+          <div id="testimonials">
+            <div
+              class="testimonial-header d-flex justify-content-between align-items-center"
+            >
+              <span>What Our Patients Say</span>
+            </div>
+            <div
+              id="testimonial-container"
+              class="d-flex justify-content-between"
+            >
+              “
+              <div id="testimonial-carousel" class="d-flex">
+                <div class="testimonial">
+                  <p>
+                    Dr. Pooja Verma Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Numquam eum odio ipsa debitis voluptatibus
+                    fugiat facere enim magni adipisci optio labore, quis
+                    dignissimos officia incidunt suscipit repellat porro
+                    distinctio quam!
+                  </p>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                      fill="#1f1f1f"
+                    >
+                      <path
+                        d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z"
+                      />
+                    </svg>
+                    <span>4.9/5</span>
+                  </div>
+                  <div class="patient">&mdash;Saksham Verma</div>
+                </div>
+
+                <div class="testimonial">
+                  <p>
+                    Dr. Pooja Verma Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Numquam eum odio ipsa debitis voluptatibus
+                    fugiat facere enim magni adipisci optio labore, quis
+                    dignissimos officia incidunt suscipit repellat porro
+                    distinctio quam!
+                  </p>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                      fill="#1f1f1f"
+                    >
+                      <path
+                        d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z"
+                      />
+                    </svg>
+                    <span>4.6/5</span>
+                  </div>
+                  <div class="patient">&mdash;Saksham Verma</div>
+                </div>
+
+                <div class="testimonial">
+                  <p>
+                    Dr. Pooja Verma Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Numquam eum odio ipsa debitis voluptatibus
+                    fugiat facere enim magni adipisci optio labore, quis
+                    dignissimos officia incidunt suscipit repellat porro
+                    distinctio quam!
+                  </p>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                      fill="#1f1f1f"
+                    >
+                      <path
+                        d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z"
+                      />
+                    </svg>
+                    <span>4/5</span>
+                  </div>
+                  <div class="patient">&mdash;Saksham Verma</div>
+                </div>
+
+                <div class="testimonial">
+                  <p>
+                    Dr. Pooja Verma Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Numquam eum odio ipsa debitis voluptatibus
+                    fugiat facere enim magni adipisci optio labore, quis
+                    dignissimos officia incidunt suscipit repellat porro
+                    distinctio quam!
+                  </p>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 -960 960 960"
+                      fill="#1f1f1f"
+                    >
+                      <path
+                        d="M306.84-700.82 424-853q11-14 25.59-21 14.58-7 30.5-7 15.91 0 30.41 7t25.5 21l117.16 152.18L831-641q23 8 36 27.11t13 42.22q0 10.67-3.03 21.3-3.04 10.63-9.97 20.37L753-367l4 173q0 31-21 52.5T685.82-120q-1.82 0-18.82-3l-187-52-186.78 51.92Q288-121 282.49-120.5q-5.51.5-10.1.5-29.39 0-49.89-21.69Q202-163.37 203-195l4-173.25L93-531q-6.93-9.83-9.97-20.55Q80-562.28 80-573q0-23 12.92-41.61Q105.84-633.21 129-641l177.84-59.82ZM343-649l-209 70 134 194-5 207 217-60 217 61-5-208 134-192-209-72-137-178-137 178Zm137 147Z"
+                      />
+                    </svg>
+                    <span>5/5</span>
+                  </div>
+                  <div class="patient">&mdash;Saksham Verma</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="faqs">
+            <span>Frequently Asked Questions</span>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Do you provide online consultation?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What conditions can be treated with homeopathy?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How long does the treatment take?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It’s also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="start-your-journey">
+          <div>
+            <div id="left">
+              <span
+                >Ready to Start Your <br />
+                Wellness Journey?
+              </span>
+              <span
+                >Book an appointment with Dr. Pooja Verma today and take the
+                first step step towards a healthier you.</span
+              >
+            </div>
+
+            <div id="mid">
+              <img src="Static/Images/logo.jpeg" alt="" height="" />
+            </div>
+
+            <div id="right">
+              <button
+                class="btn"
+                onclick="window.location.href = '/#contact-us'"
+              >
+                Book Apoointment Now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+                  />
+                </svg>
+              </button>
+              <span>Trusted by 5000+ patients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="d-lg-flex d-none justify-content-evenly align-items-center px-2 px-lg-2 py-4 text-white"
+      style="
+        background: hsl(from var(--accent-color) h s 40);
+        border-top: 2px solid white;
+      "
+    >
+      <div class="address d-lg-none">
+        <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
+          <svg
+            id="location-pin"
+            viewBox="0 0 24 24"
+            height="48"
+            width="48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="address d-lg-flex d-none align-items-center gap-2">
+        <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
+          <svg
+            id="location-pin"
+            viewBox="0 0 24 24"
+            height="80"
+            width="80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                stroke="#fff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#fff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+        </a>
+
+        <div class="cont d-none d-lg-flex flex-column">
+          <span>KA206, Spring Meadows Society </span>
+          <span>Greater Noida West</span>
+          <span> Uttar Pradesh 201306, India</span>
+        </div>
+      </div>
+
+      <span class="fs-lg-5 fs-7">©CARE7 Sehat 2026</span>
+
+      <div class="links-container d-flex flex-column py-2 px-3">
+        <span class="fw-bold fs-2 align-self-center">Links</span>
+        <span class="fs-lg-5 fs-6">
+          <a
+            id="privacy-policy-link"
+            href="/privacy-policy"
+            class="fs-lg-5 fs-6"
+          >
+            ○ Privacy
+          </a>
+        </span>
+        <span class="fs-lg-5 fs-6">
+          <a id="terms-link" href="/terms-and-condition" class="fs-lg-5 fs-6">
+            ○ Terms of Conditions
+          </a>
+        </span>
+        <span class="fs-lg-5 fs-6">
+          <a id="blogs-link" href="/blogs" class="fs-lg-5 fs-6">
+            ○ Our Blogs
+          </a>
+        </span>
+      </div>
+
+      <div class="d-flex justify-content-around gap-lg-4 gap-2 py-4">
+        <div class="sm-link">
+          <a href="https://wa.me/919971226013" target="_blank">
+            <svg
+              id="whatsapp-svg"
+              fill="#ffffff"
+              viewBox="0 0 16 16"
+              height="48"
+              width="48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
+                ></path>
+                <path
+                  d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="sm-link">
+          <a href="https://www.instagram.com/homeopathy_care7/" target="_blank">
+            <svg
+              id="instagram-svg"
+              viewBox="-2.4 -2.4 28.80 28.80"
+              width="48"
+              height="48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="sm-link">
+          <a href="https://www.youtube.com/@CARE-7-HCS-2021" target="_blank">
+            <svg
+              id="youtube-svg"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer for Mobile -->
+    <footer
+      class="d-lg-none d-flex flex-column justify-content-evenly align-items-center px-2 px-lg-2 py-4 text-white"
+    >
+      <div class="d-flex justify-content-around align-items-center w-100">
+        <div class="address d-lg-none">
+          <a href="https://maps.app.goo.gl/FBMrNzpMgPkQVpzNA" target="_blank">
+            <svg
+              id="location-pin"
+              viewBox="0 0 24 24"
+              height="48"
+              width="48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <span class="fs-lg-5 fs-6">©CARE7 Sehat 2026</span>
+
+        <div class="d-flex justify-content-around gap-lg-4 gap-2 py-4">
+          <div class="sm-link">
+            <a href="https://wa.me/919971226013" target="_blank">
+              <svg
+                id="whatsapp-svg"
+                fill="#ffffff"
+                viewBox="0 0 16 16"
+                height="48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
+                  ></path>
+                  <path
+                    d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="sm-link">
+            <a
+              href="https://www.instagram.com/homeopathy_care7/"
+              target="_blank"
+            >
+              <svg
+                id="instagram-svg"
+                viewBox="-2.4 -2.4 28.80 28.80"
+                width="48"
+                height="48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="sm-link">
+            <a href="https://www.youtube.com/@CARE-7-HCS-2021" target="_blank">
+              <svg
+                id="youtube-svg"
+                viewBox="0 0 24 24"
+                width="48"
+                height="48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="links-container d-flex flex-column py-2 px-3 w-100">
+        <span class="fw-bold fs-2 align-self-center">Links</span>
+        <div class="d-flex w-100 justify-content-between">
+          <span class="fs-lg-5 fs-6">
+            <a
+              id="privacy-policy-link"
+              href="/privacy-policy"
+              class="fs-lg-5 fs-6"
+            >
+              ○ Privacy
+            </a>
+          </span>
+          <span class="fs-lg-5 fs-6">
+            <a id="terms-link" href="/terms-and-condition" class="fs-lg-5 fs-6">
+              ○ Terms of Conditions
+            </a>
+          </span>
+          <span class="fs-lg-5 fs-6">
+            <a id="blogs-link" href="/blogs" class="fs-lg-5 fs-6">
+              ○ Our Blogs
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

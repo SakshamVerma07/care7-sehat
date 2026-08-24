@@ -1,0 +1,97 @@
+main {
+  min-height: 100dvh;
+  width: 100dvw;
+  /* padding-inline: 3rem; */
+  padding-block: 5rem;
+
+  h1 {
+    font-family: var(--heading-font);
+  }
+
+  #main-container {
+    width: 100%;
+    min-height: 80dvh;
+    display: grid;
+    /* grid-auto-rows: 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    /* grid-auto-rows: repeat(1fr, 3); */
+
+    .doctors-list-item {
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* border: 2px solid rgba(0, 0, 0, 0.1); */
+      cursor: pointer;
+      transition-duration: 300ms;
+      &:hover {
+        translate: 0 -8px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+        object-fit: contain;
+        aspect-ratio: 1.5/1;
+      }
+
+      .contents {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 0.5rem;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+
+        span.name {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: var(--accent-color);
+        }
+
+        .trust-metrics {
+          width: 100%;
+        }
+
+        .degree-block {
+          display: flex;
+          width: 100%;
+          gap: 0.5rem;
+
+          .degree {
+            background: var(--accent-color);
+            padding: 0.3rem 0.5rem;
+            color: white;
+          }
+        }
+
+        span.degree,
+        span.doctor-title {
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.2;
+          font-family: var(--normal-font);
+        }
+
+        a:has(.btn) {
+          width: 100%;
+          margin-top: 1rem;
+          .btn {
+            width: 100%;
+          }
+        }
+
+        .btn:hover,
+        .btn:focus,
+        .btn:focus-visible,
+        .btn:active {
+          background: hsl(from var(--accent-color) h s 40);
+          border-color: hsl(from var(--accent-color) h s 40) !important;
+          outline-color: hsl(from var(--accent-color) h s 40) !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+}
